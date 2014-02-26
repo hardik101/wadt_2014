@@ -1,0 +1,11 @@
+<% if member_signed_in? %>
+<h3>You have succesfully signed in</h3>
+<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
+
+<% else %>
+
+<h1> Welcome to WADL-2014 Conference </h1>
+<%= link_to "Sign In", new_member_session_path, :method => :get %>
+<%= link_to "Sign up", new_member_registration_path, :method => :get %>
+
+<% end %>
