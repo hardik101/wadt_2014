@@ -38,8 +38,6 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  
 end
 
 gem 'haml-rails'
@@ -65,9 +63,6 @@ gem 'devise', '~> 3.2'
 
 # Authorization
 gem 'cancan', '~> 1.6.7'
-
-# Pagination
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
