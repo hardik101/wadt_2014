@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140226191935) do
+ActiveRecord::Schema.define(:version => 20140228143210) do
+
+  create_table "member_infos", :force => true do |t|
+    t.string   "role",                 :default => "", :null => false
+    t.string   "diet_pref",            :default => "", :null => false
+    t.string   "academic_institution", :default => "", :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.integer  "member_id"
+  end
 
   create_table "members", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -28,6 +37,9 @@ ActiveRecord::Schema.define(:version => 20140226191935) do
     t.datetime "updated_at",                             :null => false
     t.string   "lastname"
     t.string   "firstname"
+    t.string   "diet_pref"
+    t.string   "role"
+    t.string   "academic_institution"
   end
 
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true

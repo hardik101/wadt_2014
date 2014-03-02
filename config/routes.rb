@@ -1,4 +1,21 @@
 Wadl1::Application.routes.draw do
+  
+  match '/format',       to: 'static_pages#format',      via: 'get'
+  match '/speakers',     to: 'static_pages#speakers',    via: 'get'
+  match '/submission',   to: 'static_pages#submission',  via: 'get'
+  match '/abstracts',    to: 'static_pages#abstracts',   via: 'get'
+  match '/proceedings',  to:'static_pages#proceedings',  via: 'get'
+  match '/program',      to:'static_pages#program',      via: 'get'
+  match '/grants',       to:'static_pages#grants',       via: 'get'
+  match '/sponsorships', to:'static_pages#sponsorships', via: 'get'
+  match '/travel',       to:'static_pages#travel',       via: 'get'
+  match '/sponsorships', to:'static_pages#sponsorships', via: 'get'
+  match '/contact',      to:'static_pages#contact',      via: 'get'
+
+  
+
+ 
+
     devise_for :members
 
   # The priority is based upon order of creation:
@@ -9,7 +26,8 @@ Wadl1::Application.routes.draw do
 
   root :to =>'home#index'
   devise_for :members,:controllers => { :registrations =>'registration'}
-   match 'dashboard' => 'home#dashboard'
+   match '/dashboard' => 'home#dashboard'
+   match '/home_page' =>  'home#index'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

@@ -14,6 +14,54 @@
  */
 
  @import "home.css.scss";
- @import "registration.css.scss";
+
+ @import "bootstrap";
+ $main-color : #3bbfce;
+
+
+
+ 
+
+ header {
+
+background-color: main-color
+
+ }
+
+ .text_area {
+  resize: vertical;
+  width: 55%; //Change as per your requirement
+  display: inline-block;
+  margin: auto;
+}
+
+
+
+ body { padding-left: 40px; 
+background-color: main-color;
+font-family: verdana;
+font-size :14px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
  
 

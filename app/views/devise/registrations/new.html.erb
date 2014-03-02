@@ -1,19 +1,33 @@
-<h2>Sign up</h2>
+<h2>Register for the Conference</h2>
 
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+<%= simple_form_for(resource,:html => {:class => "well"}, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email, :required => true, :autofocus => true %>
-    <%= f.input :firstname, :required => true, :autofocus => true %>
-    <%= f.input :lastname, :required => true, :autofocus => true %>
-    <%= f.input :password, :required => true %>
-    <%= f.input :password_confirmation, :required => true %>
+
+  <div class="form-inputs >
+    <%= f.input :email, :required => true, :autofocus => true,
+    :placeholder => 'Email address'%>
+
+    <%= f.input :password, :required => true,:placeholder => 'Password' %>
+    <%= f.input :password_confirmation, :required => true,:placeholder => 'Password Confirmaton' %>
+     <%= f.input :firstname, :required => true %>
+      <%= f.input :lastname, :required => true%>
+
+      <%= f.label :role %>
+       <%=f.select :role, Member::ROLE,:prompt => 'Select Role'%>
+       <%= f.label :diet_pref %>
+        <%=f.select :diet_pref, Member::DIET_PREF,:prompt => 'Select Diet Preferance'%>
+         <%= f.input :academic_institution %>
+
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Submit" %>
+    <%= f.button :submit, "Register",:class=>'btn btn-primary'%>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render :partial => "devise/shared/links" %>
+
+
+
+
