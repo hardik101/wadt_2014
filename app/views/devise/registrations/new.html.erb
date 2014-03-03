@@ -4,26 +4,38 @@
   <%= f.error_notification %>
 
 
-  <div class="form-inputs >
+  
+  <div class="form-inputs col-lg-3 " >
     <%= f.input :email, :required => true, :autofocus => true,
-    :placeholder => 'Email address',:class =>"col-sm-4"%>
+    :placeholder => 'Email address'%>
 
-    <%= f.input :password, :required => true,:placeholder => 'Password',:class => "form-control" %>
-    <%= f.input :password_confirmation, :required => true,:placeholder => 'Password Confirmaton',:class => "form-control" %>
+    <%= f.input :password, :required => true,:placeholder => 'Password' %>
+   
+    <%= f.input :password_confirmation,:label=>"Retype Password",:required => true,:placeholder => 'Password Confirmaton' %>
+    </br>
      <%= f.input :firstname, :required => true %>
+     </br>
       <%= f.input :lastname, :required => true%>
+      </br>
 
       <%= f.label :role %>
        <%=f.select :role, Member::ROLE,:prompt => 'Select Role'%>
-       <%= f.label :diet_pref %>
+       </br>
+       <%= f.label :diet_Preferance %>
         <%=f.select :diet_pref, Member::DIET_PREF,:prompt => 'Select Diet Preferance'%>
-         <%= f.input :academic_institution %>
+        </br>
+         <%= f.input :academic_institution,:placeholder => 'Optional'%>
+         </br>
 
-  </div>
-
-  <div class="form-actions">
+         <div class="form-actions ">
     <%= f.button :submit, "Register",:class=>'btn btn-primary'%>
   </div>
+
+  
+
+  
+</div>
+
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

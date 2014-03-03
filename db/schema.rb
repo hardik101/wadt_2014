@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140302171436) do
+ActiveRecord::Schema.define(:version => 20140303162729) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -73,8 +73,12 @@ ActiveRecord::Schema.define(:version => 20140302171436) do
     t.string   "diet_pref"
     t.string   "role"
     t.string   "academic_institution"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
+  add_index "members", ["confirmation_token"], :name => "index_members_on_confirmation_token", :unique => true
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true
   add_index "members", ["reset_password_token"], :name => "index_members_on_reset_password_token", :unique => true
 

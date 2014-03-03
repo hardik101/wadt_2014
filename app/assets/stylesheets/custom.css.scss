@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "bootstrap";
+
+#maincontainer{
+
+}
+
+input { width: 300px;
+ }
+
+
+
+
+body {
+   background-color: #FFFFFF;
+    margin-left: 20px; margin-right: 20px; margin-bottom: 10px;
+   font-family: LucidaGrande, Lucida, Tahoma, Arial, Helvetica, sans-serif; 
+   font: small/1.5em; font-size:small; color: #000000; 
+   overflow: auto;
+    margin :20;
+    padding:20;
+
+   
+   line-height: 1.5em;
+   }
+   
+a {color: #3A867D;text-decoration: none}
+a:hover {color: #BE5028}
+a:active {color: #8F2C1B}
+
+.center {text-align: center} 
+
+td {
+   font-family: LucidaGrande, Lucida, Tahoma, Arial, Helvetica, sans-serif; 
+   font: small/1.5em; font-size:small; color: #046F6F; 
+   }
+   
+pre {
+   font-family: "Courier New", Courier, monospace;; 
+   font: medium/1.5em; font-size:medium; color: #046F6F; 
+   }
+
+
+
+#topsection{
+	background: #9C97DB;
+	height: 175px; /*Height of top section 90px*/
+	background-image: image-url('Peles.jpg');
+	color: #FFFFFF;
+	font: medium/1.5em; font-size:medium;
+    h1{
+margin: 0;
+padding-top: 15px;
+}
+}
+
+
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin-left: 220px; /*Set left margin to LeftColumnWidth*/
+}
+
+#leftcolumn{
+float: left;
+width: 220px; /*Width of left column*/
+margin-left: -100%;
+background: #FFFFFF;
+font: medium/1.5em; font-size:medium;
+line-height: 1.0em;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: #046F6F;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #fff;
+}
+
+.innertube{
+margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 20;
+}

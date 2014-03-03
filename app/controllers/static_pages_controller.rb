@@ -1,4 +1,9 @@
 class StaticPagesController < ApplicationController
+
+  def registration
+
+  end
+  
   def format
   end
 
@@ -28,4 +33,25 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def importantdates
+
+  end
+
+  def meals
+
+  end
+  
+  def information
+  end
+
+  def committees
+  end
+
+  def accommodation
+  end
+  
+
+
+
 end

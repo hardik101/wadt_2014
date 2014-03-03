@@ -5,6 +5,7 @@ Wadl1::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   match 'format',       to: 'static_pages#format',      via: 'get'
+  match 'registration', to:'static_pages#registration', via: 'get'
   match 'speakers',     to: 'static_pages#speakers',    via: 'get'
   match 'submission',   to: 'static_pages#submission',  via: 'get'
   match 'abstracts',    to: 'static_pages#abstracts',   via: 'get'
@@ -15,9 +16,17 @@ Wadl1::Application.routes.draw do
   match 'travel',       to:'static_pages#travel',       via: 'get'
   match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
   match 'contact',      to:'static_pages#contact',      via: 'get'
+  match 'importantdates',to:'static_pages#importantdates',  via: 'get'
+  match 'meals',         to:'static_pages#meals',           via: 'get'
+  match 'information',   to:'static_pages#information',     via: 'get'
+  match 'committees',    to:'static_pages#committees',      via: 'get'
+  match 'accomodation',    to:'static_pages#accomodation',      via: 'get'
+
+
   match 'home_page' =>  'home#index'
 
   match '/members/format',       to:'static_pages#format',      via: 'get'
+  match '/members/registration', to:'static_pages#registration', via: 'get'
   match '/members/speakers',     to:'static_pages#speakers',    via: 'get'
   match '/members/submission',   to:'static_pages#submission',  via: 'get'
   match '/members/abstracts',    to:'static_pages#abstracts',   via: 'get'
@@ -27,6 +36,13 @@ Wadl1::Application.routes.draw do
   match '/members/travel',       to:'static_pages#travel',      via: 'get'
   match '/members/sponsorships', to:'static_pages#sponsorships',via: 'get'
   match '/members/contact',      to:'static_pages#contact',     via: 'get'
+
+  match '/members/importantdates',to:'static_pages#importantdates',  via: 'get'
+  match '/members/meals',         to:'static_pages#meals',           via: 'get'
+  match '/members/information',   to:'static_pages#information',     via: 'get'
+  match '/members/committees',    to:'static_pages#committees',      via: 'get'
+  match '/members/accomodation',    to:'static_pages#accomodation',  via: 'get'
+ 
 
 
 

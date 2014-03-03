@@ -13,17 +13,26 @@ Wadl1::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
+
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
   config.action_mailer.default_url_options = {:host => 'localhost:3000'}
 
   #these options are only needed if you choose smtp delivery
-  config.action_mailer.smtp Settings = {
+  config.action_mailer.smtp_settings = {
 
     :address   =>  "smtp.gmail.com",
     :port      => 25,
     :domain    => "www.gmail.com",
-    :authentication => :login,
+    :authentication => :plain,
+    enable_starttls_auto: true,
     :user_name => "hardikbalar102@gmail.com",
     :password => "balar123"
   }
