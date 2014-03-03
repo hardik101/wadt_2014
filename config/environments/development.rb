@@ -15,6 +15,22 @@ Wadl1::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = {:host => 'localhost:3000'}
+
+  #these options are only needed if you choose smtp delivery
+  config.action_mailer.smtp Settings = {
+
+    :address   =>  "smtp.gmail.com",
+    :port      => 25,
+    :domain    => "www.gmail.com",
+    :authentication => :login,
+    :user_name => "hardikbalar102@gmail.com",
+    :password => "balar123"
+  }
+
+
+
+
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

@@ -19,27 +19,41 @@
  $main-color : #3bbfce;
 
 
+.container {
 
- 
+	
+	min-width: 1000px
 
- header {
+}
 
-background-color: main-color
+
+header {
+
+}
+
+#sidebar
+ {padding-top :5px;
+ 	float :left
 
  }
 
- .text_area {
-  resize: vertical;
-  width: 55%; //Change as per your requirement
+#banner{
+ 	 background-position:top center;
+ 	 max-width: 100%;
+ 	 height: auto;
+}
+
+#text_area {
+
+  //width: 55%; //Change as per your requirement
   display: inline-block;
   margin: auto;
 }
 
+body {  
+ 	
 
-
- body { padding-left: 40px; 
-background-color: main-color;
-font-family: verdana;
+ font-family: verdana;
 font-size :14px;
 }
 

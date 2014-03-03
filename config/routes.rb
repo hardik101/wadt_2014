@@ -1,22 +1,43 @@
 Wadl1::Application.routes.draw do
   
-  match '/format',       to: 'static_pages#format',      via: 'get'
-  match '/speakers',     to: 'static_pages#speakers',    via: 'get'
-  match '/submission',   to: 'static_pages#submission',  via: 'get'
-  match '/abstracts',    to: 'static_pages#abstracts',   via: 'get'
-  match '/proceedings',  to:'static_pages#proceedings',  via: 'get'
-  match '/program',      to:'static_pages#program',      via: 'get'
-  match '/grants',       to:'static_pages#grants',       via: 'get'
-  match '/sponsorships', to:'static_pages#sponsorships', via: 'get'
-  match '/travel',       to:'static_pages#travel',       via: 'get'
-  match '/sponsorships', to:'static_pages#sponsorships', via: 'get'
-  match '/contact',      to:'static_pages#contact',      via: 'get'
+  devise_for :admin_users,ActiveAdmin::Devise.config
+   root :to =>'home#index'
+  ActiveAdmin.routes(self)
+
+  match 'format',       to: 'static_pages#format',      via: 'get'
+  match 'speakers',     to: 'static_pages#speakers',    via: 'get'
+  match 'submission',   to: 'static_pages#submission',  via: 'get'
+  match 'abstracts',    to: 'static_pages#abstracts',   via: 'get'
+  match 'proceedings',  to:'static_pages#proceedings',  via: 'get'
+  match 'program',      to:'static_pages#program',      via: 'get'
+  match 'grants',       to:'static_pages#grants',       via: 'get'
+  match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
+  match 'travel',       to:'static_pages#travel',       via: 'get'
+  match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
+  match 'contact',      to:'static_pages#contact',      via: 'get'
+  match 'home_page' =>  'home#index'
+
+  match '/members/format',       to:'static_pages#format',      via: 'get'
+  match '/members/speakers',     to:'static_pages#speakers',    via: 'get'
+  match '/members/submission',   to:'static_pages#submission',  via: 'get'
+  match '/members/abstracts',    to:'static_pages#abstracts',   via: 'get'
+  match '/members/proceedings',  to:'static_pages#proceedings', via: 'get'
+  match '/members/grants',       to:'static_pages#grants',      via: 'get'
+  match '/members/sponsorships', to:'static_pages#sponsorships',via: 'get'
+  match '/members/travel',       to:'static_pages#travel',      via: 'get'
+  match '/members/sponsorships', to:'static_pages#sponsorships',via: 'get'
+  match '/members/contact',      to:'static_pages#contact',     via: 'get'
+
+
 
   
 
- 
 
-    devise_for :members
+
+ devise_for :members,:path_names => {:sign_up =>"register"}
+ devise_for :members,:controllers => { :registration =>"registration"}
+  match 'dashboard' => 'home#dashboard'
+  ActiveAdmin.routes(self)
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -24,10 +45,10 @@ Wadl1::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
 
-  root :to =>'home#index'
-  devise_for :members,:controllers => { :registrations =>'registration'}
-   match '/dashboard' => 'home#dashboard'
-   match '/home_page' =>  'home#index'
+  
+
+ 
+   
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

@@ -1,26 +1,39 @@
-class RegistrationController < ApplicationController
+class RegistrationController < Devise::RegistrationsController
 
-	def new
-		@member= Member.new
-	end
 
-	def create
+def new 
 
-		@member = Member.new
-		@member.email = params[:member][:email]
-		@member.firstname = params[:member][:firstname]
-		@member.lastname = params[:member][:lastname]
-		@member.password = params[:member][:password]
-		@member.password_confirmation =params[:member][:password_confirmation]
+@member =Memeber.new
 
-		@member.valid?
-		if @member.errors.blank?
+end
 
-			@member.save
-		else
-			render :action => "new"
-		end
+def create 
 
-	end
+
+@member = Member.new
+
+@member.email = params[:member][:email]
+@member.password = params[:member][:password]
+@member.password_confirmation =params[:member][:password_confirmation]
+@member.firstname = params[:member][:firstname]
+@member.lastname = params[:member][:lastname]
+@member.role = params[:member][:role]
+@member.diet_pref = params[:member][:diet_pref]
+@member.academic_institution = params[:member][:academic_institution]
+
+@member.valid?
+if @member.errors.blank?
+@contact.save
+redirect_to dashboard_path
+
+else
+render :action => "new"
+end
+
+
+
+end
+
+
 
 end

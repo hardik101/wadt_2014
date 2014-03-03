@@ -13,6 +13,8 @@ gem 'pry-rails'
 gem 'pg'
 gem 'foreigner'
 
+gem 'activeadmin'
+
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
