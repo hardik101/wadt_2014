@@ -13,7 +13,7 @@ gem 'pry-rails'
 gem 'pg'
 gem 'foreigner'
 
-gem 'activeadmin'
+
 
 gem 'rdf'
 gem 'rdf-rdfxml'
@@ -42,6 +42,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 end
 
+gem 'activeadmin' 
+gem 'meta_search',    '>= 1.1.0.pre'
+
+
 gem 'haml-rails'
 
 # Project configuration
@@ -49,6 +53,7 @@ gem 'rails_config'
 
 # Fancy Forms
 gem 'simple_form'
+gem 'formtastic', '~> 2.0'
 
 # Inherited Resources
 gem 'inherited_resources', '~> 1.4.0'

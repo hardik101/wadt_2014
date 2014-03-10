@@ -1,16 +1,20 @@
 Wadl1::Application.routes.draw do
 
 
+root :to =>'home#index'
+
+  ActiveAdmin.routes(self)
+
    devise_for :members
-  root :to =>'home#index'
+  
 
   match 'format',       to: 'static_pages#format',      via: 'get'
-  match 'registration', to:'static_pages#registration', via: 'get'
+  match 'register', to:'static_pages#registration', via: 'get'
   match 'speakers',     to: 'static_pages#speakers',    via: 'get'
   match 'submission',   to: 'static_pages#submission',  via: 'get'
   match 'abstracts',    to: 'static_pages#abstracts',   via: 'get'
   match 'proceedings',  to:'static_pages#proceedings',  via: 'get'
-  
+
   match 'program',      to:'static_pages#program',      via: 'get'
   match 'grants',       to:'static_pages#grants',       via: 'get'
   match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
@@ -23,10 +27,12 @@ Wadl1::Application.routes.draw do
   match 'committees',    to:'static_pages#committees',      via: 'get'
   match 'accomodation',    to:'static_pages#accomodation',      via: 'get'
 
+  
+ 
 
 
   match '/members/format',       to:'static_pages#format',      via: 'get'
-  match '/members/registration', to:'static_pages#registration', via: 'get'
+  match '/members/register', to:'static_pages#registration', via: 'get'
   match '/members/speakers',     to:'static_pages#speakers',    via: 'get'
   match '/members/submission',   to:'static_pages#submission',  via: 'get'
   match '/members/abstracts',    to:'static_pages#abstracts',   via: 'get'

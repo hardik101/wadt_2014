@@ -11,34 +11,6 @@
   <%= csrf_meta_tags %>
 </head>
 
-<!---
-<body>
-	
-<div  class="container">
-<div class="container-fluid">
-
-<div class="row-fluid" id="banner">
-	
-</div>
-
-<div class="row-fluid">
-
-	<div class="col-md-3">
-    
-	</div>
-
-	<div class="col-md-10">
-	
- 	</div>
-
-</div>
-
-</div>
-
-</div>
-
-</body>
--->
 <body>
 <div id="maincontainer">
 
@@ -51,6 +23,10 @@
 <div id="contentwrapper">
 <div id="contentcolumn">
 <div class="innertube">
+
+
+<%= render 'layouts/messages' %>
+
  <%= yield %>
   
 </div>

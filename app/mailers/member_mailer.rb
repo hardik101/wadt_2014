@@ -7,5 +7,8 @@ class MemberMailer < ActionMailer::Base
 
    @member =member
 
-   mail(to: @member.email, subject: "Thank you for registering for the WADT-2014"	)
+   mail(to: @member.email, subject: "Thank you for registering for the WADT-2014")
 end
+
+end
+
