@@ -10,12 +10,13 @@ Wadl1::Application.routes.draw do
   match 'submission',   to: 'static_pages#submission',  via: 'get'
   match 'abstracts',    to: 'static_pages#abstracts',   via: 'get'
   match 'proceedings',  to:'static_pages#proceedings',  via: 'get'
+  
   match 'program',      to:'static_pages#program',      via: 'get'
   match 'grants',       to:'static_pages#grants',       via: 'get'
   match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
   match 'travel',       to:'static_pages#travel',       via: 'get'
-  match 'sponsorships', to:'static_pages#sponsorships', via: 'get'
   match 'contact',      to:'static_pages#contact',      via: 'get'
+
   match 'importantdates',to:'static_pages#importantdates',  via: 'get'
   match 'meals',         to:'static_pages#meals',           via: 'get'
   match 'information',   to:'static_pages#information',     via: 'get'
@@ -31,7 +32,8 @@ Wadl1::Application.routes.draw do
   match '/members/abstracts',    to:'static_pages#abstracts',   via: 'get'
   match '/members/proceedings',  to:'static_pages#proceedings', via: 'get'
   match '/members/grants',       to:'static_pages#grants',      via: 'get'
-  match '/members/sponsorships', to:'static_pages#sponsorships',via: 'get'
+
+  match '/members/program',      to:'static_pages#program',via: 'get'
   match '/members/travel',       to:'static_pages#travel',      via: 'get'
   match '/members/sponsorships', to:'static_pages#sponsorships',via: 'get'
   match '/members/contact',      to:'static_pages#contact',     via: 'get'
