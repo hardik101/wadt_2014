@@ -6,7 +6,7 @@ class Member < ActiveRecord::Base
   ROLE = [ "Student", "Invited Speaker", "Guest" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian", "Doesn't matter"]
 
-
+  after_create :send_welcome_email 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, 
   				  :remember_me ,:firstname ,
@@ -14,6 +14,13 @@ class Member < ActiveRecord::Base
   				  :role,:academic_institution 
 
   # attr_accessible :title, :body
+
+
+  private
+
+    def send_welcome_email
+      MemberMailer.welcome_email(self).deliver
+    end 
 
 
   

@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def registration
-
+  
   end
   
   def format

@@ -1,8 +1,8 @@
 Wadl1::Application.routes.draw do
-  
-  devise_for :admin_users,ActiveAdmin::Devise.config
-   root :to =>'home#index'
-  ActiveAdmin.routes(self)
+
+
+   devise_for :members
+  root :to =>'home#index'
 
   match 'format',       to: 'static_pages#format',      via: 'get'
   match 'registration', to:'static_pages#registration', via: 'get'
@@ -23,7 +23,6 @@ Wadl1::Application.routes.draw do
   match 'accomodation',    to:'static_pages#accomodation',      via: 'get'
 
 
-  match 'home_page' =>  'home#index'
 
   match '/members/format',       to:'static_pages#format',      via: 'get'
   match '/members/registration', to:'static_pages#registration', via: 'get'
@@ -44,16 +43,7 @@ Wadl1::Application.routes.draw do
   match '/members/accomodation',    to:'static_pages#accomodation',  via: 'get'
  
 
-
-
-  
-
-
-
- devise_for :members,:path_names => {:sign_up =>"register"}
- devise_for :members,:controllers => { :registration =>"registration"}
-  match 'dashboard' => 'home#dashboard'
-  ActiveAdmin.routes(self)
+ 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

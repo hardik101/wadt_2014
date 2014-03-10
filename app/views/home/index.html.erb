@@ -1,21 +1,16 @@
 
 
+<h1> This is home#index page </h1>
 
-
-
-<!--<% if member_signed_in? %>
-<h3>You have succesfully Registered for the conferance</h3>
-<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
-
-<% else %> 
-
-<h1> Welcome to WADT-2014 Conference </h1>
-<%= link_to "Sign In", new_member_session_path, :method => :get%>
-
-
-<% end %>
-
--->
+<div id="member_nav">  
+  <% if member_signed_in? %>  
+    Signed in as <%= current_member.email %>. Not you?  
+    <%= link_to "Sign out", destroy_member_session_path ,:method => :delete %>  
+  <% else %>  
+    <%= link_to "Sign up", new_member_registration_path %> or  
+    <%= link_to "Sign in", new_member_session_path %>  
+  <% end %>  
+</div> 
 
 
 
