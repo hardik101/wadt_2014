@@ -27,6 +27,9 @@ root :to =>'home#index'
   match 'committees',    to:'static_pages#committees',      via: 'get'
   match 'accomodation',    to:'static_pages#accomodation',      via: 'get'
 
+
+
+
   
  
 
