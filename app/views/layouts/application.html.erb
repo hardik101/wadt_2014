@@ -3,71 +3,47 @@
 <html>
 <head>
   <title>WADT-2014</title>
-  <p class= "notice"<%= notice %> </p>
+
+   <p class= "notice"<%= notice %> </p>
    <p class= "alert"<%= alert %> </p>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+   <%= stylesheet_link_tag    "application", :media => "all" %>
+   <%= javascript_include_tag "application" %>
+   <%= csrf_meta_tags %>
+
 </head>
 
-<!---
+
 <body>
-	
-<div  class="container">
-<div class="container-fluid">
 
-<div class="row-fluid" id="banner">
-	
-</div>
-
-<div class="row-fluid">
-
-	<div class="col-md-3">
-    
-	</div>
-
-	<div class="col-md-10">
-	
- 	</div>
-
-</div>
-
-</div>
-
-</div>
-
-</body>
--->
-<body>
 <div id="maincontainer">
 
-<div id="topsection">
-<div class="innertube">
-<%=render 'layouts/topsection' %>
-</div>
-</div>
+	<div id="topsection">
+		<div class="innertube">
+		<%=render 'layouts/topsection' %>
+	    </div>
+	</div>
 
-<div id="contentwrapper">
-<div id="contentcolumn">
-<div class="innertube">
- <%= yield %>
-  
-</div>
-</div>
-</div>
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+            <div class="innertube">
+            <%= yield %>
+            </div>
+        </div>
+    </div>
 
-<div id="leftcolumn">
-<div class="innertube">
-  <%= render 'layouts/sidebar' %> 
-</div>
-</div>
+    <div id="leftcolumn">
+        <div class="innertube">
+        <%= render 'layouts/sidebar' %> 
+        </div>
+    </div>
 
-<div id="footer">
-  <%= render 'layouts/footer' %>
-</div>
+    <div id="footer">
+    <%= render 'layouts/footer' %>
+    </div>
 
 
 </div>  
+
 </body>
 </html>
