@@ -1,25 +1,9 @@
 
 # Name of the installation
-name: "WADT"
+name: WADT
+# Hostname of the installation
+hostname: example.com
 
-
-action_mailer:
-
-config.action_mailer.default :charset => "utf-8"
- #these options are only needed if you choose smtp delivery
-
-
-# Mail delivery
-# http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
-  port:                  587,
-  domain:               'example.com',
-  user_name:            'hardikbalar102@gmail.com',
-  password:             'balar123',
-  authentication:       'plain',
-  enable_starttls_auto: true  }
 
 footer:
  - text: WADT-2014

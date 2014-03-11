@@ -1,1 +1,20 @@
-<b>WADT 2014</b> 
+<div class="collapse navbar-collapse navbar-footer-collapse" id="footer">
+  <ul class="nav navbar-nav">
+    <% Settings.footer.each do |entry| %>
+        <li>
+        <% if entry.href %>
+        <p>
+         <%= link_to entry.text %>
+          <%= link_to entry.href, :target => "_blank" %> 
+        <% else %>
+          <%= link_to entry.text, '#' %> </p>
+        
+        <%end %>
+       </li>
+  <% end %>
+  </ul>
+</div>
+
+
+
+              

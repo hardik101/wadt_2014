@@ -1,11 +1,11 @@
 Wadl1::Application.routes.draw do
 
-
+   root :to =>'home#index'
    devise_for :members
-  root :to =>'home#index'
+  
 
   match 'format',       to: 'static_pages#format',      via: 'get'
-  match 'registration', to:'static_pages#registration', via: 'get'
+  match 'register', to:'static_pages#registration', via: 'get'
   match 'speakers',     to: 'static_pages#speakers',    via: 'get'
   match 'submission',   to: 'static_pages#submission',  via: 'get'
   match 'abstracts',    to: 'static_pages#abstracts',   via: 'get'
@@ -26,7 +26,7 @@ Wadl1::Application.routes.draw do
 
 
   match '/members/format',       to:'static_pages#format',      via: 'get'
-  match '/members/registration', to:'static_pages#registration', via: 'get'
+  match '/members/register',     to:'static_pages#registration', via: 'get'
   match '/members/speakers',     to:'static_pages#speakers',    via: 'get'
   match '/members/submission',   to:'static_pages#submission',  via: 'get'
   match '/members/abstracts',    to:'static_pages#abstracts',   via: 'get'
