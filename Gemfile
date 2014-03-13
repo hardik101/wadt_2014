@@ -45,6 +45,9 @@ end
 gem 'activeadmin' 
 gem 'meta_search',    '>= 1.1.0.pre'
 
+#For active links 
+gem 'active_link_to'
+
 
 gem 'haml-rails'
 

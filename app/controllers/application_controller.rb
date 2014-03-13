@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :list_stage
+
+
 def authenticate_admin_user!
   authenticate_member!
   unless current_member.is_admin?
@@ -14,6 +17,15 @@ def current_admin_user
   current_member
   
 end
+
+def list_stage
+
+  @list = Stage.WADT_stage
+ 
+end
+
+
+
 
 
 

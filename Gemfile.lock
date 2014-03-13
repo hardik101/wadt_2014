@@ -21,6 +21,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_link_to (1.0.2)
+      actionpack
     activeadmin (0.6.0)
       arbre (>= 1.0.1)
       bourbon (>= 1.0.0)
@@ -236,6 +238,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_link_to
   activeadmin
   bootstrap-sass (~> 3.0.0)
   cancan (~> 1.6.7)

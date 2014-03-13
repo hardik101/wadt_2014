@@ -1,0 +1,11 @@
+<nav id="sidebar">
+<ul class="nav nav-pills  nav-stacked center">
+
+<li class="active"><%= active_link_to 'Home', root_path %></li>
+
+   <% @list.each do |a| %>
+   <li><%= active_link_to a, a %></li>
+   <%end%>
+
+</ul>
+</nav>

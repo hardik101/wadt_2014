@@ -74,15 +74,17 @@ line-height: 1.0em;
 #footer{
 clear: left;
 width: 100%;
-background: #046F6F;
-color: #FFF;
+background-color: #F3F3F3;
 text-align: center;
 padding: 4px 0;
+bottom:0;
+
 }
 
-#footer a{
-color: #fff;
-}
+
+
+
+
 
 .innertube{
 margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/
