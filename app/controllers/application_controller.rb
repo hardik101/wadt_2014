@@ -20,14 +20,11 @@ end
 
 def list_stage
 
-  @list = Stage.WADT_stage
+   @st_number=Stage.set_st
+
+  @list = Stage.WADT_stage(@st_number)
  
 end
-
-
-
-
-
 
 end
 

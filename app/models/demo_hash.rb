@@ -20,12 +20,24 @@ Staging_hash= {
 		9=>Publish_proceedings}
 
 
-          
-
-
-	   @list=  Staging_hash.values_at @stage_number
+	   @list=  Staging_hash.values_at 1
 
 		puts @list
+
+	   @list.each do |a|
+
+	    
+     end
+
+		
+
+
+
+
+
+
+	
+
 
 
 

@@ -10,14 +10,20 @@ gem 'secure_headers'
 
 gem 'pry-rails'
 
-gem 'pg'
 gem 'foreigner'
-
-
-
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
+
+
+group :production, :development, :test do
+gem 'pg'
+end
+
+# Deploy with Capistrano
+gem 'capistrano'
+
+
 
 
 # Gems used only for assets and not required
