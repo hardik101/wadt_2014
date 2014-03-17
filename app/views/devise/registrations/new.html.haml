@@ -1,0 +1,18 @@
+%h2= @page_title = 'Register for WADT-2014'
+
+= simple_form_for resource, url: registration_path(resource_name), html: {class: 'form-horizontal col-md-4 wow'} do |f|
+  
+  = f.input :email,:required => true, autofocus: true
+  = f.input :firstname, :required => true
+  = f.input :lastname, :required => true
+  = f.input :password
+  = f.input :password_confirmation, required: true
+  = f.label :Role
+  = f.select :role, Member::ROLE,:prompt=>"Select your role", :required => true
+  .br
+  = f.label :Diet_preferance
+  = f.select :diet_pref, Member::DIET_PREF ,:prompt => "Select a diet preferance", :required => true
+  = f.input :academic_institution,:placeholder => "Optional"
+  = f.button :submit, 'Register',:class=>"btn btn-primary"
+
+= render 'devise/shared/links'

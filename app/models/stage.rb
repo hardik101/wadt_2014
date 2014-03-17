@@ -15,7 +15,7 @@ def self.WADT_stage(st_number)
 
 def self.set_st
   
-  return 8
+  return 3
 
 end
    

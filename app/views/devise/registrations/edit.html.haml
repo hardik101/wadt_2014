@@ -1,0 +1,40 @@
+%h2= @page_title = current_user.first_name + "'s Account"
+
+
+- unless resource.confirmed?
+  .alert.alert-danger Your account is not yet confirmed!
+
+
+= simple_form_for resource, url: registration_path(resource_name), html: {class: 'form-horizontal wow',:method => put } do|f|
+  
+  = f.input :email, :required => true, :autofocus => true
+  = f.input :firstname
+  = f.input :lastname
+  = f.input :password, :required => false, :input_html => {:autocomplete => "off"}, :hint => "leave blank if you don't want to change it"
+  = f.input :password_confirmation, :required => false
+  = f.input :current_password, :required => true, :hint => "we need your current password to confirm your changes"
+  = f.label :Dier_preferance
+  = f.select :diet_pref, Member::DIET_PREF ,:prompt => "Select a diet preferance",:required => false
+  = f.label :Role
+  = f.select :role, Member::ROLE ,:promt => "Change Role" , :required => false
+  = f.input :academic_institution,:required => false
+
+  = f.button :submit, 'Update'
+
+- unless resource.confirmed?
+  %h3 Confirmation
+
+  %p Your account is not yet confirmed.
+  = link_to 'Resend confirmation E-Mail!', confirmation_path(resource_name, user: {email: resource.email}), method: :post, class: 'btn btn-default', disable_with: t(:wait)
+
+%h3 Cancel my account
+
+%p Unhappy?
+ = link_to 'Cancel my account', registration_path(resource_name), confirm: 'Are you sure?', method: :delete, class: 'btn btn-danger'
+
+
+
+
+
+
+
