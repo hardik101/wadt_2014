@@ -19,15 +19,33 @@ Staging_hash= {
 		8=>Post_conf,
 		9=>Publish_proceedings}
 
+	
+ list =Array.new
 
-	   @list=  Staging_hash.values_at 1
+	   list=  Staging_hash.values_at 1
 
-		puts @list
+	  
 
-	   @list.each do |a|
 
-	    
-     end
+
+
+    a=Array.new
+     a= list
+
+     a.each  do |v|
+
+     	v.to_s.gsub(/\s+/,"")
+
+end 
+
+    puts a
+
+    a1="hi hello"
+    a1.gsub(/\s+/,"")
+
+    puts  a1
+    
+
 
 		
 
