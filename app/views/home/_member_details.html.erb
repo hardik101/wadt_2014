@@ -1,5 +1,6 @@
-<% if current_member.role? == "student" %>
-<h1> As a student, you can apply for Grant. Please visit 'Grants and Scholarships' section for more information</h1>
+
+<% if current_member.role. == "Student" %>
+<h3> As a student, you can apply for Grant. Please visit 'Grants and Scholarships' section for more information</h3>
 <% end %>
 
 <% unless current_member.is_admin ==true %>
@@ -15,5 +16,12 @@
  <%if  current_member.is_admin == true %>
  <h3> As a Admin,you can access admin section at /admin URL. </h3>
  <% end %>
+</div>
+
+<div>
+
+<%= link_to "Change your Account Details", edit_member_registration_path  %>  
 
 </div>
+
+
