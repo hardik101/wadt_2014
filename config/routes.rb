@@ -26,13 +26,7 @@ root :to =>'home#index'
   match 'Information',           to:'static_pages#Information',     via: 'get'
   match 'Committees',            to:'static_pages#committees',      via: 'get'
   match 'Accomodation',          to:'static_pages#Accomodation',      via: 'get'
-  match 'Aims%20 & %20Topic',          to:'static_pages#Aims&Topic',      via: 'get'
-
-
-
-
-  
- 
+  match 'Aims%20&%20Topic',          to:'static_pages#Aims&Topic',      via: 'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

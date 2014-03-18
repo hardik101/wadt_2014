@@ -1,0 +1,7 @@
+# Footer links and texts
+footer:
+  - text: WADT-2014
+    href: wadt2014.cs.ovgu.de
+  - text: Email:
+    href: wadt2014@admin.com
+    

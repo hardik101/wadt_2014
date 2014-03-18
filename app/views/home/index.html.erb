@@ -1,5 +1,3 @@
-
-
 <h1> This is home#index page </h1>
 
 <div id="member_nav">  
@@ -8,7 +6,7 @@
 
    <%=render 'home/member_details' %>
 
-    <%= link_to "Sign out", destroy_member_session_path ,:method => :delete %>  
+    <%= link_to "Sign out", destroy_member_session_path,:method => :delete %>  
 
       <% else %>  
     <%= link_to "Sign up", new_member_registration_path %> or  
