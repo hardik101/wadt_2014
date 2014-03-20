@@ -1,9 +1,7 @@
-%h2= @page_title = current_member.firstname + "'s Account"
-
+%h2= @page_title=current_member.firstname 
 
 - unless resource.confirmed?
   .alert.alert-danger Your account is not yet confirmed!
-
 
 = simple_form_for resource, url: registration_path(resource_name), html: {class: 'form-horizontal wow' } do|f|
   
@@ -18,16 +16,6 @@
   = f.label :Role
   = f.select :role, Member::ROLE,:prompt => "Change Role",:required => true
   = f.input :academic_institution,:required => false
-
   = f.button :submit, 'Update'
 
 = render 'devise/shared/links'
-
-
-
-
-
-
-
-
-

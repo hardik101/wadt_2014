@@ -1,0 +1,12 @@
+- if current_member.role=="Student"
+  %h3 As a student, you can apply for Grant.Please visit 'Grants and Scholarships' section for more information
+- unless current_member.is_admin ==true
+  %h2 hi, #{current_member.firstname} ,please find your details
+  %div
+    %ul
+      %li= current_member.firstname
+      %li= current_member.lastname
+    - if  current_member.is_admin == true
+      %h3 As a Admin,you can access admin section at /admin URL.
+  %div
+    = link_to "Change your Account Details", edit_member_registration_path

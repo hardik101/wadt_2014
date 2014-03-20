@@ -5,12 +5,12 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Wadl1"
+  config.site_title = Settings.name
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+  #config.site_title_link ="xyz"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
@@ -78,7 +78,7 @@ ActiveAdmin.setup do |config|
   # will call the method to return the path.
   #
   # Default:
-  config.logout_link_path = 'destroy_member_session_path'
+  config.logout_link_path = :destroy_member_session_path
 
   config.logout_link_method    = :delete
 
@@ -117,7 +117,7 @@ ActiveAdmin.setup do |config|
   #
   # Enable and disable Batch Actions
   #
-  config.batch_actions = true
+  config.batch_actions = false
 
 
   # == Controller Filters

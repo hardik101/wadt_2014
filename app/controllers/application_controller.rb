@@ -18,10 +18,7 @@ end
   end
 
   def list_stage
-
-   @st_number=Stage.set_st
-   @list = Stage.WADT_stage(@st_number)
- 
+   @list=Settings.st_hash[Stage.get_st] 
   end
 
 end

@@ -14,6 +14,7 @@ gem 'foreigner'
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
+gem 'psych'
 
 
 group :production, :development, :test do
