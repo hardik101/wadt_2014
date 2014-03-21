@@ -30,7 +30,7 @@ development:
   :port: 587
   :authentication: plain
   :user_name: email
-  :password: balar321
+  :password: balar123
   :enable_starttls_auto: true
 production:
   :address: smtp.gmail.com
