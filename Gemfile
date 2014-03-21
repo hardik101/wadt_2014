@@ -16,6 +16,7 @@ gem 'rdf-rdfxml'
 gem 'rdf-n3'
 gem 'psych'
 
+gem "erb2haml", :group => :development
 
 group :production, :development, :test do
 gem 'pg'

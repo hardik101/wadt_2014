@@ -3,11 +3,8 @@
 
 @import "bootstrap";
 
-
 input { width: 300px;
  }
-
-
 
 body {
 
@@ -38,7 +35,6 @@ pre {
    }
 
 
-
 #topsection{
 	background: #9C97DB;
 	height: 175px; /*Height of top section 90px*/
@@ -50,8 +46,6 @@ margin: 0;
 padding-top: 15px;
 }
 }
-
-
 
 #contentwrapper{
 float: left;
@@ -80,11 +74,6 @@ padding: 4px 0;
 bottom:0;
 
 }
-
-
-
-
-
 
 .innertube{
 margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/

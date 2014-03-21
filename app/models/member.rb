@@ -4,8 +4,6 @@ class Member < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,:confirmable
 
-
-
   ROLE =      ["Student", "Invited Speaker", "Guest" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian", "Doesn't matter"]
 
@@ -14,10 +12,7 @@ class Member < ActiveRecord::Base
 
   def skip_conf!
     self.confirm! if self.is_admin?
-
   end
-
-
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, 
   				        :remember_me ,:firstname ,
@@ -25,16 +20,9 @@ class Member < ActiveRecord::Base
   				        :role,:academic_institution,:is_admin,:confirmed_at
                   
 
- 
-
-
   private
-
     def send_welcome_email
       MemberMailer.welcome_email(self).deliver
     end 
 
-
-  
- 
 end

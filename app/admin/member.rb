@@ -10,8 +10,6 @@ ActiveAdmin.register Member do
     column :role
 
     actions
-
-
   end 
 
   form do |f|
