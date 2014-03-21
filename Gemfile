@@ -19,6 +19,9 @@ gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
 
+gem "erb2haml", :group => :development
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
