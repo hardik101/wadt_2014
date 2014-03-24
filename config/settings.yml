@@ -15,7 +15,7 @@ hostname: wadt2014.cs.ovgu.de
 email: hardikbalar102@gmail.com
 
 #email address for admin to log in as admin
-admin_email: expamle@admin.com
+admin_email: example@admin.com
 password: password
 
 # Footer links and texts

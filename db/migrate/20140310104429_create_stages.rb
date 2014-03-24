@@ -2,9 +2,8 @@
   def change
     create_table :stages do |t|
 
-    	t.integer :stage_number, :default=> 1
-
-      t.timestamps
+    	t.integer :stage_number,:null=> false, :default=> 1
+        t.timestamps
     end
   end
 end
