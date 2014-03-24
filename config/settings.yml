@@ -16,7 +16,7 @@ email: hardikbalar102@gmail.com
 
 #email address for admin to log in as admin
 admin_email: expamle@admin.com
-password: xyz
+password: password
 
 # Footer links and texts
 footer:

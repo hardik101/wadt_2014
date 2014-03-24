@@ -14,14 +14,14 @@
 ActiveRecord::Schema.define(:version => 20140310202353) do
 
   create_table "active_admin_comments", :force => true do |t|
-    t.string   "resource_id",   :null => false
-    t.string   "resource_type", :null => false
-    t.integer  "author_id",     :null => false
-    t.string   "author_type",   :null => false
-    t.string   "member",        :null => false
+    t.string   "resource_id",                   :null => false
+    t.string   "resource_type",                 :null => false
+    t.integer  "author_id",                     :null => false
+    t.string   "author_type",                   :null => false
+    t.string   "member",        :default => "", :null => false
     t.text     "body"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
     t.string   "namespace"
   end
 
@@ -46,10 +46,8 @@ ActiveRecord::Schema.define(:version => 20140310202353) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
-    t.string   "lastname"
-    t.string   "firstname"
-    t.string   "diet_pref"
-    t.string   "role"
+    t.string   "lastname",               :default => "",    :null => false
+    t.string   "firstname",              :default => "",    :null => false
     t.string   "academic_institution"
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
