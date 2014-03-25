@@ -19,9 +19,6 @@ notifications:
 before_install:
   - 'gem install bundler'
 
-script:
-  - bundle exec rake test:coveralls
-
 before_script:
   - psql -c 'create database wadt_test;' -U postgres
   - psql -U postgres -c "create extension postgis"
