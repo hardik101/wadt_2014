@@ -1,0 +1,16 @@
+
+# Name of the installation
+name: WADT
+# Hostname of the installation
+hostname: example.com
+
+
+footer:
+ - text: WADT-2014
+ - text: Homepage
+   href: http://about.example.com
+ - text: Email
+   href: xyz@example.com
+
+
+

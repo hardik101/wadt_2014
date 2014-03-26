@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '3.2.17'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,9 +13,14 @@ gem 'pry-rails'
 gem 'pg'
 gem 'foreigner'
 
+gem 'activeadmin'
+
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
+
+gem "erb2haml", :group => :development
+
 
 
 # Gems used only for assets and not required
@@ -38,8 +43,6 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  
 end
 
 gem 'haml-rails'
@@ -65,9 +68,6 @@ gem 'devise', '~> 3.2'
 
 # Authorization
 gem 'cancan', '~> 1.6.7'
-
-# Pagination
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

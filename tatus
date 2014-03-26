@@ -1,0 +1,53 @@
+commit cfeea163d17413b07b6a718cecf8b82d0cb5e759
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Mon Mar 3 22:06:51 2014 +0100
+
+    	modified:   app/assets/stylesheets/custom.css.scss
+    	modified:   app/views/devise/registrations/new.html.erb
+    	modified:   app/views/layouts/_footer.html.erb
+
+commit 678231c2c737d264b3875107daf5540825dd16e3
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Mon Mar 3 21:54:38 2014 +0100
+
+    layout changes
+
+commit 409e04de849247001781b26c9c294ffb35fbf82c
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Mon Mar 3 12:23:17 2014 +0100
+
+    	deleted:    app/assets/stylesheets/application.css
+    	deleted:    app/assets/stylesheets/conference.css
+    	deleted:    app/views/layouts/_header.html.erb
+    	deleted:    app/views/layouts/_main.html.erb
+    	deleted:    public/index.html
+
+commit 24e418c44a2dab4bb67ac3ae144713c5339a30fe
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Mon Mar 3 12:18:00 2014 +0100
+
+    active_admin added
+
+commit 8877a1638026152d378f92eb71bafeb606d3527f
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Sun Mar 2 17:54:58 2014 +0100
+
+    modified devise forms
+
+commit 421874b88d7574f526d37c4cb86beb5450fbfc7e
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Thu Feb 27 20:23:59 2014 +0100
+
+    saas changes
+
+commit 3d1acaf282383fcf1aad18233ad8e9645ae772c1
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Thu Feb 27 11:10:48 2014 +0100
+
+    proper formating
+
+commit a99e012f033185adf2cb1b2bee515e47de59525a
+Author: hardik101 <hardikbalar101@gmail.com>
+Date:   Wed Feb 26 21:46:51 2014 +0100
+
+    intial commit
