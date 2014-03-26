@@ -29,14 +29,14 @@ development:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: email
-  :password: balar123
+  :user_name: hardikbalar102
+  :password: balar321
   :enable_starttls_auto: true
 production:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: email
+  :user_name: hardikbalar102
   :password: balar321
   :enable_starttls_auto: true
 

@@ -8,10 +8,10 @@ class Member < ActiveRecord::Base
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian", "Doesn't matter"]
 
   after_create :send_welcome_email 
-  after_create :skip_conf!
+  after_create :skip_conf
 
-  def skip_conf!
-    self.confirm! if self.is_admin?
+  def skip_conf
+    (self.skip_confirmation! && self.confirm!) if self.is_admin == true
   end
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, 
