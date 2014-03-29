@@ -29,15 +29,15 @@ development:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: email
-  :password: balar123
+  :user_name: ENV["GMAIL_USERNAME"]
+  :password: ENV["GMAIL_PASSWORD"]
   :enable_starttls_auto: true
 production:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: email
-  :password: balar321
+  :user_name: ENV["GMAIL_USERNAME"]
+  :password: ENV["GMAIL_PASSWORD"]
   :enable_starttls_auto: true
 
 st_hash:
@@ -45,6 +45,7 @@ st_hash:
   - Register
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -56,6 +57,7 @@ st_hash:
   - Register
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -67,6 +69,7 @@ st_hash:
  1: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -75,6 +78,7 @@ st_hash:
  7: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -86,6 +90,7 @@ st_hash:
  2: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -95,6 +100,7 @@ st_hash:
  8: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -109,6 +115,7 @@ st_hash:
  3: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -119,6 +126,7 @@ st_hash:
  9: 
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation
@@ -135,6 +143,7 @@ st_hash:
   - Register
   - Aims & Topic
   - Format & Location
+  - Committees
   - Important Dates
   - Travel
   - Accomodation

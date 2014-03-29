@@ -2,4 +2,5 @@
   %ul.nav.nav-pills.nav-stacked.center
     %li.active= active_link_to 'Home', root_path
     - @list.each do |a|
-      %li= active_link_to a, a
+    -s=a.sub(' & ','_').downcase
+      %li= active_link_to a,s
