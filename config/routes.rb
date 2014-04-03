@@ -25,7 +25,7 @@ root :to =>'home#index'
   match 'meals',                 to:'static_pages#Meals',             via: 'get'
   match 'information',           to:'static_pages#Information',       via: 'get'
   match 'committees',            to:'static_pages#committees',        via: 'get'
-  match 'accomodation',          to:'static_pages#Accomodation',      via: 'get'
+  match 'accommodation',          to:'static_pages#accommodation',      via: 'get'
   match 'aims_topic',            to:'static_pages#Aims&Topic',        via: 'get'
 
 
@@ -46,7 +46,7 @@ root :to =>'home#index'
   match 'members/meals',                   to:'static_pages#Meals',           via: 'get'
   match 'members/information',             to:'static_pages#Information',     via: 'get'
   match 'members/committees',              to:'static_pages#committees',      via: 'get'
-  match 'members/accomodation',            to:'static_pages#Accomodation',    via: 'get'
+  match 'members/accommodation',            to:'static_pages#accommodation',    via: 'get'
   match 'members/aims_topic',        to:'static_pages#Aims&Topic',      via: 'get'
 
   # The priority is based upon order of creation:
