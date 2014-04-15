@@ -1,0 +1,13 @@
+#stage_list
+  %h1 Listing stage
+    - @stages.each do |stage|
+     = stage.stage_number
+  
+      %td.list_actions
+        = link_to 'Show', stage
+        %br
+        = link_to 'Edit', edit_stage_path(stage)
+        %br
+        = link_to 'Destroy', stage,:confirm => 'Are you sure?',:method => :delete
+        %br
+        = link_to 'New Stage', new_stage_path
