@@ -8,7 +8,7 @@ root :to =>'home#index'
    devise_for :members
 
   match 'format_location',       to: 'static_pages#Format&Location',  via: 'get'
-  match 'Register',              to:'static_pages#Register',          via: 'get'
+  match 'register',              to:'static_pages#Register',          via: 'get'
   match 'speakers',              to: 'static_pages#Speakers',         via: 'get'
   match 'submission',            to: 'static_pages#Submission',       via: 'get'
   match 'accepted%20abstracts',  to: 'static_pages#AcceptedAbstracts',via: 'get'
