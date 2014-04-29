@@ -1,5 +1,5 @@
 class MemberMailer < ActionMailer::Base
-  default from: "hardikbalar102@gmail.com"
+  default from: Settings.email
 
 	def welcome_email(member)
 		@member =member
