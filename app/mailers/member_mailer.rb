@@ -6,5 +6,10 @@ class MemberMailer < ActionMailer::Base
 		mail(to: @member.email, subject: "Thank you for registering for the WADT-2014")
 	end
 
+	def new_user_registered_email(member)
+		@member = member
+		mail(to: Settings.contact ,subject:"New user registered for WADT")
+	end 
+
 end
 

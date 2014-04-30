@@ -8,6 +8,7 @@ class Member < ActiveRecord::Base
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
 
   after_create :send_welcome_email 
+
   after_create :skip_conf
 
   def skip_conf
@@ -23,6 +24,7 @@ class Member < ActiveRecord::Base
   private
     def send_welcome_email
       MemberMailer.welcome_email(self).deliver
+      MemberMailer.new_user_registered_email(self).deliver
     end 
 
 end

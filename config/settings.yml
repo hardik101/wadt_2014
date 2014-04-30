@@ -14,6 +14,8 @@ hostname: wadt2014.cs.ovgu.de
 # Sender address for outgoing mail
 email: hardikbalar102@gmail.com
 
+contact: wadt2014@gmail.com
+
 #email address for admin to log in as admin
 admin_email: example@admin.com
 password: password
