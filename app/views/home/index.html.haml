@@ -1,14 +1,19 @@
+#member_nav
+- if member_signed_in?
+  Signed in as #{current_member.email}. Not you?
+  = link_to "Sign out", destroy_member_session_path,:method => :delete
+  =render 'home/member_details'
+
 %h1 
 The 22nd International Workshop on Algebraic Development Techniques (WADT 2014) will take place in Sinaia, Romania, from 4th to 7th September, 2014. 
 It will be preceeded by the IFIP WG 1.3 meeting (September 2nd-3rd).
 
-%h4 
- Previous WADT Workshops:
- 
+%h4 Previous WADT Workshops:
 %ul
- %li= link_to 'WADT 2012, Salamanca, Spain,June 7-10, 2012.',"http://maude.sip.ucm.es/wadt2012/"
- %li= link_to 'WADT 2010, Schloss Etelsen, Germany, July 1-4, 2010.',"http://www.informatik.uni-bremen.de/wadt2010/"
- %li= link_to 'WADT 2008, Pisa, Italy, June 13-16, 2008.',"http://www.di.unipi.it/WADT2008/"
+  %li= link_to 'WADT 2012, Salamanca, Spain,June 7-10, 2012.',"http://maude.sip.ucm.es/wadt2012/"
+  %li= link_to 'WADT 2010, Schloss Etelsen, Germany, July 1-4, 2010.',"http://www.informatik.uni-bremen.de/wadt2010/"
+  %li= link_to 'WADT 2008, Pisa, Italy, June 13-16, 2008.',"http://www.di.unipi.it/WADT2008/"
 
 
 
+\
