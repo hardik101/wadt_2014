@@ -3,8 +3,8 @@
 
 @import "bootstrap";
 
-input { width: 300px;
- }
+input{ width: 300px;
+ } 
 
 body {
 
@@ -53,7 +53,7 @@ width: 100%;
 }
 
 #contentcolumn{
-margin-left: 220px; /*Set left margin to LeftColumnWidth*/
+margin-left: 240px; /*Set left margin to LeftColumnWidth*/
 }
 
 #leftcolumn{
@@ -74,7 +74,10 @@ padding: 4px 0;
 bottom:0;
 
 }
+#center_text{
 
+  text-align: center;
+}
 .innertube{
 margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/
 margin-top: 20;

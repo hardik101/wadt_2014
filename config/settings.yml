@@ -14,9 +14,11 @@ hostname: wadt2014.cs.ovgu.de
 # Sender address for outgoing mail
 email: hardikbalar102@gmail.com
 
+contact: wadt2014@gmail.com
+
 #email address for admin to log in as admin
 admin_email: example@admin.com
-password: password
+password: 
 
 # Footer links and texts
 footer:
@@ -29,15 +31,15 @@ development:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: ENV["GMAIL_USERNAME"]
-  :password: ENV["GMAIL_PASSWORD"]
+  :user_name: hardikbalar102
+  :password: nils1234
   :enable_starttls_auto: true
 production:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: ENV["GMAIL_USERNAME"]
-  :password: ENV["GMAIL_PASSWORD"]
+  :user_name: hardikbalar102
+  :password: nils1234
   :enable_starttls_auto: true
 
 st_hash:
@@ -48,7 +50,7 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
@@ -60,7 +62,7 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
@@ -68,11 +70,13 @@ st_hash:
   - Program
  1: 
   - Aims & Topic
+  - Register
   - Format & Location
   - Committees
   - Important Dates
+  - Submission
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
  7: 
@@ -81,7 +85,7 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
@@ -93,7 +97,7 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
@@ -103,22 +107,22 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
   - Accepted Abstracts
   - Program
   - Submission
-  - Review finalized
-  - Accepted papers
+  - Finalized Reviews 
+  - Accepted Papers
  3: 
   - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
@@ -129,15 +133,15 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
   - Accepted Abstracts
   - Program
   - Submission
-  - Review finalized
-  - Accepted papers
+  - Finalized Reviews
+  - Accepted Papers
   - Proceedings
  4: 
   - Register
@@ -146,7 +150,7 @@ st_hash:
   - Committees
   - Important Dates
   - Travel
-  - Accomodation
+  - Accommodation
   - Sponsors & Grants
   - Contact
   - Speakers
