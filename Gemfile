@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '3.2.17'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,12 +10,22 @@ gem 'secure_headers'
 
 gem 'pry-rails'
 
-gem 'pg'
 gem 'foreigner'
-
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'
+gem 'psych'
+
+gem "erb2haml", :group => :development
+
+group :production, :development, :test do
+gem 'pg'
+end
+
+# Deploy with Capistrano
+gem 'capistrano'
+
+
 
 
 # Gems used only for assets and not required
@@ -40,6 +50,13 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 end
 
+gem 'activeadmin' 
+gem 'meta_search',    '>= 1.1.0.pre'
+
+#For active links 
+gem 'active_link_to'
+
+
 gem 'haml-rails'
 
 # Project configuration
@@ -47,6 +64,7 @@ gem 'rails_config'
 
 # Fancy Forms
 gem 'simple_form'
+gem 'formtastic', '~> 2.0'
 
 # Inherited Resources
 gem 'inherited_resources', '~> 1.4.0'

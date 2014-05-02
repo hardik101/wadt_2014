@@ -1,0 +1,20 @@
+- unless current_member.is_admin ==true
+  %h4 hi, #{current_member.firstname} ,please find your account details
+  %div
+    %ul
+      %li Firstname : #{current_member.firstname}
+      %li Lastname : #{current_member.lastname}
+      %li Email : #{current_member.email}
+      %li Role : #{current_member.role}
+      %li Academic institution : #{current_member.academic_institution}
+
+    - if  current_member.is_admin == true
+      %h3 As a Admin,you can access admin section at /admin URL.
+- if current_member.role=="Student"
+  %h5 As a student,if you want to apply for available grant ,please send e-mail at 
+  %h5= Settings.contact
+  %br
+  Please visit 'Grants and Scholarships' section for more information.
+  %br
+%div
+  = link_to "Change your Account Details", edit_member_registration_path
