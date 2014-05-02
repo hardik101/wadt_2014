@@ -1,0 +1,157 @@
+
+# Name of the installation
+name: "WADT 2014"
+
+#Banner Details 
+fullname: "22nd International Workshop on Algebraic Development Techniques"
+place: "Sinaia, Romania,September 4-7,2014"
+
+# Hostname of the installation
+hostname: wadt2014.cs.ovgu.de
+# Optional asset host for delivery of static files (css, images, javascripts)
+# asset_host: assets.example.com
+
+# Sender address for outgoing mail
+email: hardikbalar102@gmail.com
+
+contact: wadt2014@gmail.com
+
+#email address for admin to log in as admin
+admin_email: example@admin.com
+password: 
+
+# Footer links and texts
+footer:
+  - text: WADT 2014
+    href: "admin_email"
+  - text: Email
+    href: "hostname"
+
+development:
+  :address: smtp.gmail.com
+  :port: 587
+  :authentication: plain
+  :user_name: hardikbalar102
+  :password: nils1234
+  :enable_starttls_auto: true
+production:
+  :address: smtp.gmail.com
+  :port: 587
+  :authentication: plain
+  :user_name: hardikbalar102
+  :password: nils1234
+  :enable_starttls_auto: true
+
+st_hash:
+ 5: 
+  - Register
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Accepted Abstracts
+ 6:  
+  - Register
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Accepted Abstracts
+  - Program
+ 1: 
+  - Aims & Topic
+  - Register
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Submission
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+ 7: 
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Accepted Abstracts
+  - Program
+ 2: 
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+ 8: 
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Accepted Abstracts
+  - Program
+  - Submission
+  - Finalized Reviews 
+  - Accepted Papers
+ 3: 
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Submission
+ 9: 
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Accepted Abstracts
+  - Program
+  - Submission
+  - Finalized Reviews
+  - Accepted Papers
+  - Proceedings
+ 4: 
+  - Register
+  - Aims & Topic
+  - Format & Location
+  - Committees
+  - Important Dates
+  - Travel
+  - Accommodation
+  - Sponsors & Grants
+  - Contact
+  - Speakers
+  - Submission

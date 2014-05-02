@@ -1,0 +1,27 @@
+language: ruby
+
+rvm:
+  - 2.1.0
+
+addons:
+  postgresql: "9.3"
+
+branches:
+  only:
+    - develop
+
+services:
+  - redis-server
+
+notifications:
+  email: false
+
+before_install:
+  - 'gem install bundler'
+
+
+before_script:
+  - psql -c 'create database wadt_test;' -U postgres
+  - psql -U postgres -c "create extension postgis"
+  - RAILS_ENV=test bundle exec rake db:migrate || true
+
