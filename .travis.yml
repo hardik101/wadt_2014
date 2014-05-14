@@ -9,6 +9,7 @@ addons:
 branches:
   only:
     - develop
+    - master
 
 services:
   - redis-server
