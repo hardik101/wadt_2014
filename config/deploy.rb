@@ -1,8 +1,27 @@
-# config valid only for Capistrano 3.1
+# config valid only for Capistrano 4.1
 lock '3.1.0'
+application = 'wadt2014-test'
 
-set :application, 'wadl1'
-set :repo_url, 'git@github.com:hardik101/wadl_2014.git'
+set :repo_url, 'git@github.com:hardik101/wadt_2014.git'
+set :stage, :production
+set :scm, "git"
+set :branch, "master"
+set :deploy_via, :remote_cache
+set :application,application
+set :deploy_to, "/home/ruby/#{application}"
+set :user, "ruby"
+set :admin_runner, "ruby"
+set :port_number, "3020"
+
+
+set :rails_env, "production"
+server "test.wadt2014.cs.ovgu.de"
+
+  role :app, "ruby@john.iws.cs.ovgu.de"
+  role :web, "ruby@john.iws.cs.ovgu.de"
+  role :db,  "ruby@john.iws.cs.ovgu.de", :primary => true
+
+
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
@@ -40,19 +59,26 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+      run "touch #{current_path}/tmp/restart.txt"
+      end
+      desc "Start Application -- not needed for Passenger"
+      task :start, :roles => :app do
+      # nothing -- need to override default cap start task when using Passenger
     end
-  end
+    end
+
 
   after :publishing, :restart
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
-      # within release_path do
+        # within release_path do
       #   execute :rake, 'cache:clear'
       # end
     end
   end
-
 end
+
+
+

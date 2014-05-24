@@ -27,6 +27,15 @@ gem 'capistrano'
 
 
 
+group :development, :test do
+    gem 'railroady'
+end
+
+
+
+
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
