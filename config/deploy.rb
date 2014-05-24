@@ -59,7 +59,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      run "touch #{current_path}/tmp/restart.txt"
+      #run "script/web restart"
       end
       desc "Start Application -- not needed for Passenger"
       task :start, :roles => :app do
