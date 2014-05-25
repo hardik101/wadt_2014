@@ -17,8 +17,8 @@ email: hardikbalar102@gmail.com
 contact: wadt2014@gmail.com
 
 #email address for admin to log in as admin
-admin_email: example@admin.com
-password: 
+admin_email: admin@wadt2014.com
+password: password
 
 # Footer links and texts
 footer:
