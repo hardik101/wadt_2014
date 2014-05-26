@@ -2,6 +2,7 @@
 # Name of the installation
 name: "WADT 2014"
 conf_name: "WADT"
+conf_year: "2014"
 
 #Banner Details 
 fullname: "22nd International Workshop on Algebraic Development Techniques"

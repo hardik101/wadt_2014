@@ -1,0 +1,22 @@
+#postgreSQL 8.2 and up are supported ,other DBs are not supported. 
+development: &config
+  adapter: postgresql
+  database: wadt_development
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  password: b321
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *config
+  database: wadt_test
+
+production:
+  <<: *config
+  database: wadt_production
+
+
