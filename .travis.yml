@@ -8,8 +8,11 @@ addons:
 
 branches:
   only:
-    - develop
-    - master
+    -master
+    -develop
+    -14_replace_WADT_by_ref_settings
+    
+
 
 services:
   - redis-server
