@@ -11,6 +11,11 @@ Wadl1::Application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = true
 
+  #setting hostname for action_mailer
+  config.action_mailer.default_url_options = {:host => Settings.hostname}
+ 
+
+
   # Compress JavaScripts and CSS
   config.assets.compress = true
 

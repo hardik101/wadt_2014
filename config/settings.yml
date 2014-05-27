@@ -8,6 +8,8 @@ place: "Sinaia, Romania,September 4-7,2014"
 
 # Hostname of the installation
 hostname: wadt2014.cs.ovgu.de
+test_hostname:test.wadt2014.cs.ovgu.de
+
 # Optional asset host for delivery of static files (css, images, javascripts)
 # asset_host: assets.example.com
 
