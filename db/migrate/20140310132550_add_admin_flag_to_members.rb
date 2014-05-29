@@ -11,7 +11,6 @@ end
 
 
   def down
-    remove_column :members, :is_admin
     Member.find_by_email(Settings.admin_email).try(:delete)
   end
 
