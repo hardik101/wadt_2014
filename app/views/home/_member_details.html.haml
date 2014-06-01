@@ -1,20 +1,18 @@
 - unless current_member.is_admin ==true
-  %h4 hi, #{current_member.firstname} ,please find your account details
+  %h4 Dear,#{current_member.firstname}
+  %p Please find below your account details, as entered by you when creating the account:
   %div
     %ul
-      %li Firstname : #{current_member.firstname}
+      %li Firstname: #{current_member.firstname}
       %li Lastname : #{current_member.lastname}
-      %li Email : #{current_member.email}
-      %li Role : #{current_member.role}
+      %li Email    : #{current_member.email}
+      %li Role     : #{current_member.role}
       %li Academic institution : #{current_member.academic_institution}
 
     - if  current_member.is_admin == true
-      %h3 As a Admin,you can access admin section at /admin URL.
+      %h3 As an admin,you can access admin section at /admin URL.
 - if current_member.role=="Student"
-  %h5 As a student,if you want to apply for available grant ,please send e-mail at 
-  %h5= Settings.contact
-  %br
-  Please visit 'Grants and Scholarships' section for more information.
+  %p As a student,you can apply for available grant,please send e-mail at #{Settings.contact}. Please visit 'Sponsors & Grants' section for more information.
   %br
 %div
   = link_to "Change your Account Details", edit_member_registration_path

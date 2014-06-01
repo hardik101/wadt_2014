@@ -18,7 +18,7 @@ class Member < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, 
   				        :remember_me ,:firstname ,
   				        :lastname,:diet_pref,:diet_msg,
-  				        :role,:academic_institution,:is_admin,:confirmed_at
+  				        :role,:affiliation,:is_admin,:confirmed_at
                   
 
   private
