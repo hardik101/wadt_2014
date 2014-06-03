@@ -1,13 +1,12 @@
 %h2= @page_title = 'Register for WADT-2014'
 
-= simple_form_for resource, url: registration_path(resource_name), html: {class: 'form-horizontal col-md-4 wow'} do |f|
+= simple_form_for resource, url: registration_path(resource_name), html: {class: ''} do |f|
   
-  = f.input :email,:required => true, autofocus: true
+  = f.input :email,:required => true, autofocus: true 
   = f.input :firstname, :required => true
   = f.input :lastname, :required => true
   = f.input :password
-  = f.label :retype_password
-  = f.input :password_confirmation, required: true
+  = f.input :password_confirmation,label: 'Retype password',required: true
   = f.label :Role
   = f.select :role, Member::ROLE,:prompt=>"Select your role", :required => true,:selected => Member::ROLE[2]
   %br
