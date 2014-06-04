@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20140601211614) do
     t.string   "role",                   :default => "",    :null => false
     t.string   "diet_pref",              :default => "",    :null => false
     t.boolean  "grant",                  :default => false
-    t.string   "diet_msg"
+    t.string   "diet_msg",               :default => "",    :null => false
     t.string   "affiliation",            :default => "",    :null => false
   end
 
