@@ -47,7 +47,6 @@ production:
 st_hash:
  5: 
   - Register
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -59,7 +58,6 @@ st_hash:
   - Accepted Abstracts
  6:  
   - Register
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -70,10 +68,9 @@ st_hash:
   - Speakers
   - Accepted Abstracts
   - Program
- 1: 
-  - Aims & Topic
+ 1:
+  - Format & Location 
   - Register
-  - Format & Location
   - Committees
   - Important Dates
   - Submission
@@ -82,7 +79,6 @@ st_hash:
   - Sponsors & Grants
   - Contact
  7: 
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -94,7 +90,6 @@ st_hash:
   - Accepted Abstracts
   - Program
  2: 
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -104,7 +99,6 @@ st_hash:
   - Contact
   - Speakers
  8: 
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -119,18 +113,16 @@ st_hash:
   - Finalized Reviews 
   - Accepted Papers
  3: 
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
+  - Speakers
   - Travel
   - Accommodation
   - Sponsors & Grants
-  - Contact
-  - Speakers
   - Submission
+  - Contact
  9: 
-  - Aims & Topic
   - Format & Location
   - Committees
   - Important Dates
@@ -146,9 +138,8 @@ st_hash:
   - Accepted Papers
   - Proceedings
  4: 
-  - Register
-  - Aims & Topic
   - Format & Location
+  - Register
   - Committees
   - Important Dates
   - Travel

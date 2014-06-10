@@ -2,14 +2,42 @@
 - if member_signed_in?
   Signed in as #{current_member.email}. Not you?
   = link_to "Sign out", destroy_member_session_path,:method => :delete
-  =render 'home/member_details'
+  =render 'home/member_details'  
 
 %h1 
-The 22nd International Workshop on Algebraic Development Techniques (WADT 2014) will take place in Sinaia, Romania, from 4th to 7th September, 2014. 
+The 22nd International Workshop on Algebraic Development Techniques (WADT 2014) will take place in #{link_to 'Sinaia','http://en.wikipedia.org/wiki/Sinaia'}, Romania, from 4th to 7th September, 2014. 
 It will be preceeded by the IFIP WG 1.3 meeting (September 2nd-3rd).
 
-%h4 Previous WADT Workshops:
-%ul
-  %li= link_to 'WADT 2012, Salamanca, Spain,June 7-10, 2012.',"http://maude.sip.ucm.es/wadt2012/"
-  %li= link_to 'WADT 2010, Schloss Etelsen, Germany, July 1-4, 2010.',"http://www.informatik.uni-bremen.de/wadt2010/"
-  %li= link_to 'WADT 2008, Pisa, Italy, June 13-16, 2008.',"http://www.di.unipi.it/WADT2008/"
+%h4
+.div
+#{link_to image_tag("icon.jpg", alt: "Invited Speakers",:class=> 'news'),'speakers'} 
+%p #{link_to 'C. Benzmüller',"http://page.mi.fu-berlin.de/cbenzmueller/"} and #{link_to 'R. Leino',"http://research.microsoft.com/en-us/um/people/leino/"} will be the invited speakers of #{Settings.name}. 
+=link_to 'Submission is now open!' ,'submission'
+
+
+- if member_signed_in?
+  .content
+  %h3.pagetitle Aims and scope:
+  %p.body
+    The algebraic approach to system specification encompasses many aspects of the formal design of software systems. Originally born as formal method for reasoning about abstract data types, it now covers new specification frameworks and programming paradigms (such as object-oriented, aspect-oriented, agent-oriented, logic and higher-order functional programming) as well as a wide range of application areas (including information systems, concurrent, distributed and mobile systems).
+  %h3.pagetitle Topics of interest:
+  %p.body
+    Typical, but not exclusive topics of interest are:
+  %ul
+    %li Foundations of algebraic specification
+    %li Other approaches to formal specification, including process calculi and models of concurent, distributed and mobile computing
+    %li Specification languages, methods, and environments
+    %li Semantics of conceptual modelling methods and techniques
+    %li Model-driven development
+    %li Graph transformations, term rewriting and proof systems
+    %li Integration of formal specification techniques
+    %li Formal testing and quality assurance
+    %li Validation and verification
+%br
+%br
+-unless member_signed_in?
+  %h4 Previous WADT Workshops:
+  %ul
+    %li= link_to 'WADT 2012, Salamanca, Spain,June 7-10, 2012.',"http://maude.sip.ucm.es/wadt2012/"
+    %li= link_to 'WADT 2010, Schloss Etelsen, Germany, July 1-4, 2010.',"http://www.informatik.uni-bremen.de/wadt2010/"
+    %li= link_to 'WADT 2008, Pisa, Italy, June 13-16, 2008.',"http://www.di.unipi.it/WADT2008/"
