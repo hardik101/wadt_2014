@@ -1,12 +1,14 @@
+%h3= @page_title = ' Register for WADT-2014'
+%br
 = simple_form_for resource,url: registration_path(resource_name), html: {class: 'form-horizontal col-md-5'} do |f|
   = f.error_notification
   =devise_error_messages!
   = f.input_field :email,  type: 'email', pattern: '[^@]*@[^@]*', class: 'form-control', required: true, placeholder: 'E-Mail'
-  = f.input_field :firstname,class: 'form-control', required: true, placeholder: 'First name',style: 'margin: 0 0 2px;', as: :string
-  = f.input_field :lastname,class: 'form-control', required: true, placeholder: 'Last name',style: 'margin: 0 0 2px;', as: :string
+  = f.input_field :firstname,class: 'form-control', required: true, placeholder: 'First Name',style: 'margin: 0 0 2px;', as: :string
+  = f.input_field :lastname,class: 'form-control', required: true, placeholder: 'Last Name',style: 'margin: 0 0 2px;', as: :string
   = f.input_field :password, class: 'form-control', required: true, placeholder: 'Password'
   = f.input_field :password_confirmation, class: 'form-control', required: true, placeholder: 'Retype Password'
-  = f.input_field :affiliation,required: true,class: 'form-control', required: true, placeholder: 'Enter academic affiliation'
+  = f.input_field :affiliation,required: true,class: 'form-control', required: true, placeholder: 'Please enter academic affiliation'
   = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Please specify if you have some diet restrictions or allergies"
   =f.label 'Role'
   = f.select :role, Member::ROLE,:prompt=>"Select your role",:required => true,:selected => Member::ROLE[2]
@@ -14,6 +16,6 @@
   .input-group
     
     %span.input-group-btn
-      %input.btn.btn-primary{type: 'submit', value: 'Register' ,:class => 'col-sm-5'}
+      %input.btn.btn-primary{type: 'submit', value: 'Register' ,:class => 'col-sm-7'}
 
 = render 'devise/shared/links'
