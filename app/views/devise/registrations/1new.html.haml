@@ -1,7 +1,8 @@
 %h2= @page_title = 'Register for WADT-2014'
 
 = simple_form_for resource,url: registration_path(resource_name) ,html: {class: 'col-sm-4 wow'} do |f|
-  
+  = f.error_notification
+
   = f.input :email,:required => true, autofocus: true 
   = f.input :firstname, :required => true
   = f.input :lastname, :required => true
