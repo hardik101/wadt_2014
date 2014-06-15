@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :list_stage
+  helper :all
 
   def authenticate_admin_user!
     authenticate_member!

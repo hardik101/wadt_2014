@@ -3,28 +3,29 @@ Wadl1::Application.routes.draw do
 
 root :to =>'home#index' 
 
+
   ActiveAdmin.routes(self)
 
    devise_for :members
-
-  match 'format_location',       to: 'static_pages#Format&Location',  via: 'get'
-  match 'register',              to:'static_pages#Register',          via: 'get'
-  match 'speakers',              to: 'static_pages#Speakers',         via: 'get'
-  match 'submission',            to: 'static_pages#Submission',       via: 'get'
-  match 'accepted%20abstracts',  to: 'static_pages#AcceptedAbstracts',via: 'get'
-  match 'proceedings',           to:'static_pages#Proceedings',       via: 'get'
-  match 'program',               to:'static_pages#Program',           via: 'get'
-  match 'sponsors_grants',       to:'static_pages#Sponsors&Grants',   via: 'get'
-  match 'travel',                to:'static_pages#travel',            via: 'get'
-  match 'contact',               to:'static_pages#Contact',           via: 'get'
-  match 'important%20dates',     to:'static_pages#ImportantDates',    via: 'get'
-  match 'meals',                 to:'static_pages#Meals',             via: 'get'
-  match 'information',           to:'static_pages#Information',       via: 'get'
-  match 'committees',            to:'static_pages#committees',        via: 'get'
-  match 'accommodation',         to:'static_pages#accommodation',     via: 'get'
-  match 'aims_topic',            to:'static_pages#Aims&Topic',        via: 'get'
-  match 'accepted%20papers',     to:'static_pages#AcceptedPapers',    via: 'get'
-  match 'finalized%20reviews',   to:'static_pages#FinalizedReviews',    via: 'get'
+  
+  match 'format_location',       to: 'static_pages#Format&Location',  via: 'get',:as => :format_location
+  match 'register',              to:'static_pages#Register',          via: 'get',:as => :register
+  match 'speakers',              to: 'static_pages#Speakers',         via: 'get',:as => :speakers
+  match 'submission',            to: 'static_pages#Submission',       via: 'get',:as => :submission
+  match 'accepted_abstracts',  to: 'static_pages#AcceptedAbstracts',via: 'get',:as => :accepted_abstracts
+  match 'proceedings',           to:'static_pages#Proceedings',       via: 'get',:as => :proceedings
+  match 'program',               to:'static_pages#Program',           via: 'get',:as => :program
+  match 'sponsors_grants',       to:'static_pages#Sponsors&Grants',   via: 'get',:as => :sponsors_grants
+  match 'travel',                to:'static_pages#travel',            via: 'get',:as => :travel
+  match 'contact',               to:'static_pages#Contact',           via: 'get',:as=>  :contact
+  match 'important_dates',     to:'static_pages#ImportantDates',    via: 'get',:as => :important_dates
+  match 'meals',                 to:'static_pages#Meals',             via: 'get',:as => :meals
+  match 'information',           to:'static_pages#Information',       via: 'get',:as => :information
+  match 'committees',            to:'static_pages#committees',        via: 'get',:as => :committees
+  match 'accommodation',         to:'static_pages#accommodation',     via: 'get',:as => :accommodation
+  match 'aims_topic',            to:'static_pages#Aims&Topic',        via: 'get',:as => :aims_topic
+  match 'accepted_papers',     to:'static_pages#AcceptedPapers',    via: 'get',:as => :proceedings
+  match 'finalized_reviews',   to:'static_pages#FinalizedReviews',  via: 'get', :as => :proceedings
 
 
 
@@ -33,22 +34,22 @@ root :to =>'home#index'
   match 'members/register',                to:'static_pages#Register',          via: 'get'
   match 'members/speakers',                to: 'static_pages#Speakers',         via: 'get'
   match 'members/submission',              to: 'static_pages#Submission',       via: 'get'
-  match 'members/accepted%20abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get'
+  match 'members/accepted_abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get'
   match 'members/proceedings',             to:'static_pages#Proceedings',       via: 'get'
   match 'members/program',                 to:'static_pages#Program',           via: 'get'
   match 'members/sponsors_grants',         to:'static_pages#Sponsors&Grants',   via: 'get'
   
   match 'members/travel',                  to:'static_pages#travel',            via: 'get'
   match 'members/contact',                 to:'static_pages#Contact',           via: 'get'
-  match 'members/accepted%20papers',       to:'static_pages#AcceptedPapers',    via: 'get'
+  match 'members/accepted_papers',       to:'static_pages#AcceptedPapers',    via: 'get'
 
-  match 'members/important%20dates',       to:'static_pages#ImportantDates',    via: 'get'
+  match 'members/important_dates',       to:'static_pages#ImportantDates',    via: 'get'
   match 'members/meals',                   to:'static_pages#Meals',             via: 'get'
   match 'members/information',             to:'static_pages#Information',       via: 'get'
   match 'members/committees',              to:'static_pages#committees',        via: 'get'
   match 'members/accommodation',           to:'static_pages#accommodation',     via: 'get'
   match 'members/aims_topic',              to:'static_pages#Aims&Topic',        via: 'get'
-  match 'members/finalized%20reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
+  match 'members/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
 
 
   # The priority is based upon order of creation:
