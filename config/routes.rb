@@ -9,7 +9,7 @@ root :to =>'home#index'
    devise_for :members
   
   match 'format_location',       to: 'static_pages#Format&Location',  via: 'get',:as => :format_location
-  match 'register',              to:'static_pages#Register',          via: 'get',:as => :register
+  match 'registration',              to:'static_pages#Registration',          via: 'get',:as => :registration
   match 'speakers',              to: 'static_pages#Speakers',         via: 'get',:as => :speakers
   match 'submission',            to: 'static_pages#Submission',       via: 'get',:as => :submission
   match 'accepted_abstracts',  to: 'static_pages#AcceptedAbstracts',via: 'get',:as => :accepted_abstracts
@@ -31,7 +31,7 @@ root :to =>'home#index'
 
 
   match 'members/format_location',         to: 'static_pages#Format&Location',  via: 'get'
-  match 'members/register',                to:'static_pages#Register',          via: 'get'
+  match 'members/registration',                to:'static_pages#Registration',          via: 'get'
   match 'members/speakers',                to: 'static_pages#Speakers',         via: 'get'
   match 'members/submission',              to: 'static_pages#Submission',       via: 'get'
   match 'members/accepted_abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get'

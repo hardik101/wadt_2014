@@ -4,7 +4,7 @@ class Member < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,:confirmable
 
-  ROLE =      ["Student", "Invited Speaker", "Standard participant" ]
+  ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
 
   after_create :send_welcome_email 
