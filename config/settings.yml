@@ -1,6 +1,8 @@
 
 # Name of the installation
 name: "WADT 2014"
+conf_name: "WADT"
+conf_year: "2014"
 
 #Banner Details 
 fullname: "22nd International Workshop on Algebraic Development Techniques"
@@ -14,7 +16,7 @@ test_hostname: test.wadt2014.cs.ovgu.de
 # asset_host: assets.example.com
 
 # Sender address for outgoing mail
-email:  wadt2014.confirmations@gmail.com
+email: wadt2014.confirmation@gmail.com
 
 contact: wadt2014@gmail.com
 
@@ -33,15 +35,15 @@ development:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: wadt2014.confirmations
-  :password: nils1234
+  :user_name: wadt2014.confirmation
+  :password: wadt1234
   :enable_starttls_auto: true
 production:
   :address: smtp.gmail.com
   :port: 587
   :authentication: plain
-  :user_name: wadt2014.confirmations
-  :password: nils1234
+  :user_name: wadt2014.confirmation
+  :password: wadt1234
   :enable_starttls_auto: true
 
 st_hash:
