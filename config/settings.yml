@@ -48,7 +48,7 @@ production:
 
 st_hash:
  5: 
-  - Registration
+  - Register
   - Format & Location
   - Committees
   - Important Dates
@@ -59,7 +59,7 @@ st_hash:
   - Speakers
   - Accepted Abstracts
  6:  
-  - Registration
+  - Register
   - Format & Location
   - Committees
   - Important Dates
@@ -72,7 +72,7 @@ st_hash:
   - Program
  1:
   - Format & Location 
-  - Registration
+  - Register
   - Committees
   - Important Dates
   - Submission
@@ -116,7 +116,7 @@ st_hash:
   - Accepted Papers
  3: 
   - Format & Location
-  - Registration
+  - Register
   - Committees
   - Important Dates
   - Speakers
@@ -142,7 +142,7 @@ st_hash:
   - Proceedings
  4: 
   - Format & Location
-  - Registration
+  - Register
   - Committees
   - Important Dates
   - Travel
