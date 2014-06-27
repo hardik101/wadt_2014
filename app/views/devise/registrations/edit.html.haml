@@ -9,12 +9,12 @@
   = f.input :lastname
   = f.input :password, :required => false, :input_html => {:autocomplete => "off"}, :hint => "leave blank if you don't want to change it"
   = f.input :password_confirmation, :required => false
-  = f.input :current_password, :required => true, :hint => "Enter current password to confirm your changes"
   = f.label :Diet_preferance
   = f.text_area :diet_msg, :id => "message_area", :cols => 34, :rows => 3 ,:placeholder => "Leave blank if you dont want to change it"
   = f.label :Role
   = f.select :role, Member::ROLE,:prompt => "Change Role",:required => true
   = f.input :affiliation,:required => true
+  = f.input :current_password, :required => true, :hint => "Enter current password to confirm your changes"
   = f.button :submit, 'Update',:class=>"btn btn-primary"
 %h3 Cancel my account
 %p
