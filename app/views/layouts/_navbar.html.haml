@@ -5,6 +5,7 @@
   -s=a.sub(" & " ,'_').downcase
   -s=s.sub(" ","_")
   -s1='/members/'+s
+  -a='Registration'  if a == "Register" 
    %li{class: is_active?(s1)} #{link_to a,s}
     
 		
