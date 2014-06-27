@@ -1,0 +1,9 @@
+
+New member details  
+ Email : #{@member.email}
+ Firstname : #{@member.firstname}
+ Lastname  :  #{@member.lastname}
+ Role      : #{@member.role}
+ Diet_Message :#{@member.diet_msg}
+ Affiliation : #{@member.affiliation}
+ This is auto-generated mail!!!

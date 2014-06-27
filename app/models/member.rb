@@ -7,7 +7,9 @@ class Member < ActiveRecord::Base
   ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
 
-  after_create :send_welcome_email 
+  after_create :send_email_to_organizer 
+
+  after_save :send_welcome_email, :if => proc { |l| l.confirmed_at_changed? && l.confirmed_at_was.nil? }
 
   after_create :skip_conf
 
@@ -19,12 +21,21 @@ class Member < ActiveRecord::Base
   				        :remember_me ,:firstname ,
   				        :lastname,:diet_pref,:diet_msg,
   				        :role,:affiliation,:is_admin,:confirmed_at
+
+ #def after_confirmation
+  #  MemberMailer.new_user_registered_email(self).deliver
+  
+  #end
                   
 
   private
+
     def send_welcome_email
       MemberMailer.welcome_email(self).deliver
+    end
+ 
+   def send_email_to_organizer 
       MemberMailer.new_user_registered_email(self).deliver
-    end 
+   end 
 
 end
