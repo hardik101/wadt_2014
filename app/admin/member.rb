@@ -5,9 +5,12 @@ ActiveAdmin.register Member do
     column :email
     column  :firstname
     column :lastname
-    column  "Email confirmed on " , :confirmed_at
-    column :is_admin
+    column :diet_msg
+    column :affiliation
     column :role
+    column  "Email confirmed at" , :confirmed_at
+    column :is_admin
+    
 
     actions
   end 
