@@ -11,8 +11,6 @@
 
     - if  current_member.is_admin == true
       %h3 As an admin,you can access admin section at /admin URL.
-- if current_member.role=="Student"
-  %p As a student,you can apply for available grant,please send e-mail at #{Settings.contact}. Please visit #{link_to  'Sponsors & Grants','sponsors_grants'} section for more information.
   %br
 %div
   = link_to "Change your Account Details", edit_member_registration_path
