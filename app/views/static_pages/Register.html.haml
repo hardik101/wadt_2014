@@ -5,6 +5,7 @@
     %h4 You have registered for #{Settings.name}.
     Signed in as #{current_member.email}. Not you?
     = link_to "Sign out", destroy_member_session_path,:method => :delete
+    = render 'fees'
     %br
   - else
     %p If you are trying to register for the first time,please do so #{link_to "here.", new_member_registration_path}
