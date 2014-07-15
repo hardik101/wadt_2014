@@ -91,7 +91,7 @@ root :to =>'home#index'
   match 'members/confirmation/committees',              to:'static_pages#committees',        via: 'get'
   match 'members/confirmation/accommodation',           to:'static_pages#accommodation',     via: 'get'
   match 'members/confirmation/aims_topic',              to:'static_pages#Aims&Topic',        via: 'get'
-  match 'members/confirmation/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
+  match 'members/confirmation/  finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
