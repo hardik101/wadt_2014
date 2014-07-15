@@ -52,6 +52,47 @@ root :to =>'home#index'
   match 'members/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
 
 
+
+  match 'members/password/format_location',         to: 'static_pages#Format&Location',  via: 'get'
+  match 'members/password/register',                to:'static_pages#Register',          via: 'get'
+  match 'members/password/speakers',                to: 'static_pages#Speakers',         via: 'get'
+  match 'members/password/submission',              to: 'static_pages#Submission',       via: 'get'
+  match 'members/password/accepted_abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get'
+  match 'members/password/proceedings',             to:'static_pages#Proceedings',       via: 'get'
+  match 'members/password/program',                 to:'static_pages#Program',           via: 'get'
+  match 'members/password/sponsors_grants',         to:'static_pages#Sponsors&Grants',   via: 'get'
+  match 'members/password/travel',                  to:'static_pages#travel',            via: 'get'
+  match 'members/password/contact',                 to:'static_pages#Contact',           via: 'get'
+  match 'members/password/accepted_papers',       to:'static_pages#AcceptedPapers',    via: 'get'
+  match 'members/password/important_dates',       to:'static_pages#ImportantDates',    via: 'get'
+  match 'members/password/meals',                   to:'static_pages#Meals',             via: 'get'
+  match 'members/password/information',             to:'static_pages#Information',       via: 'get'
+  match 'members/password/committees',              to:'static_pages#committees',        via: 'get'
+  match 'members/password/accommodation',           to:'static_pages#accommodation',     via: 'get'
+  match 'members/password/aims_topic',              to:'static_pages#Aims&Topic',        via: 'get'
+  match 'members/password/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
+
+
+
+  match 'members/confirmation/format_location',         to: 'static_pages#Format&Location',  via: 'get'
+  match 'members/confirmation/register',                to:'static_pages#Register',          via: 'get'
+  match 'members/confirmation/speakers',                to: 'static_pages#Speakers',         via: 'get'
+  match 'members/confirmation/submission',              to: 'static_pages#Submission',       via: 'get'
+  match 'members/confirmation/accepted_abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get'
+  match 'members/confirmation/proceedings',             to:'static_pages#Proceedings',       via: 'get'
+  match 'members/confirmation/program',                 to:'static_pages#Program',           via: 'get'
+  match 'members/confirmation/sponsors_grants',         to:'static_pages#Sponsors&Grants',   via: 'get'
+  match 'members/confirmation/travel',                  to:'static_pages#travel',            via: 'get'
+  match 'members/confirmation/contact',                 to:'static_pages#Contact',           via: 'get'
+  match 'members/confirmation/accepted_papers',       to:'static_pages#AcceptedPapers',    via: 'get'
+  match 'members/confirmation/important_dates',       to:'static_pages#ImportantDates',    via: 'get'
+  match 'members/confirmation/meals',                   to:'static_pages#Meals',             via: 'get'
+  match 'members/confirmation/information',             to:'static_pages#Information',       via: 'get'
+  match 'members/confirmation/committees',              to:'static_pages#committees',        via: 'get'
+  match 'members/confirmation/accommodation',           to:'static_pages#accommodation',     via: 'get'
+  match 'members/confirmation/aims_topic',              to:'static_pages#Aims&Topic',        via: 'get'
+  match 'members/confirmation/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

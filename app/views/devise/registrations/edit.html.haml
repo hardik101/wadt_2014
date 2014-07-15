@@ -9,12 +9,13 @@
   = f.input_field :lastname,class: 'form-control', required: true, placeholder: 'First Name',style: 'margin: 0 0 2px;'
   = f.input_field :password,:required => false, class: 'form-control', placeholder: 'Enter new password (Leave blank otherwise)'
   = f.input_field :password_confirmation,class: 'form-control',:required => false,:placeholder => "Retype new password"
-  = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Change your diet related message here or leave blank otherwise"
+  = f.input_field :affiliation,:required => true,:class =>"form-control",:placeholder => "Change affiliation"
   = f.label :Role
   = f.select :role, Member::ROLE,:prompt => "Change Role",:required => true
+  %br
   = f.label 'Register for'
   = f.select :registered_for, Member::REG_FOR,:prompt=>"Change",:required => true
-  = f.input_field :affiliation,:required => true,:class =>"form-control",:placeholder => "Change affiliation"
+  = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Change your diet related message here or leave blank otherwise"
   = f.input_field :current_password,:required => true,class: 'form-control', :placeholder => "Enter current password to confirm your changes"
   .input-group
     
@@ -25,6 +26,7 @@
 %h3 Cancel my account
 %p
   Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete}
+  %br
   = link_to "Back", :back
 
 //= render 'devise/shared/links'

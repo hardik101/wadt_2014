@@ -11,6 +11,7 @@
   = f.input_field :affiliation,required: true,class: 'form-control', required: true, placeholder: 'Please enter academic affiliation'
   = f.label 'Role'
   = f.select :role, Member::ROLE,:prompt=>"Select your role",:required => true,:selected => Member::ROLE[2]
+  %br
   = f.label 'Register for'
   = f.select :registered_for, Member::REG_FOR,:prompt=>"Select",:required => true,:selected => Member::REG_FOR[0]
   = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Please specify if you have some diet restrictions or allergies"

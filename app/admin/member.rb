@@ -7,6 +7,7 @@ ActiveAdmin.register Member do
     column :lastname
     column :diet_msg
     column :affiliation
+    column :registered_for
     column :role
     column  "Email confirmed at" , :confirmed_at
     column :is_admin
@@ -17,7 +18,12 @@ ActiveAdmin.register Member do
 
   form do |f|
     f.inputs "Member Details" do
-      f.input :email
+      f.input :firstname
+      f.input :lastname
+      f.input :registered_for
+      f.input :diet_msg
+      f.input :affiliation
+      f.input :role
       f.input :password
       f.input :password_confirmation
       f.input :is_admin, :label => "Super Administrator"
