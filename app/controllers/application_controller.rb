@@ -16,6 +16,11 @@ class ApplicationController < ActionController::Base
    current_member
   end
 
+  def total_fees_count
+   @total_fees = Member.compute_fees
+  end 
+
+
   def list_stage
    @list=Settings.st_hash[Stage.get_st] 
   end

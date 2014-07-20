@@ -8,6 +8,7 @@
       %li Email    : #{current_member.email}
       %li Role     : #{current_member.role}
       %li Affiliation : #{current_member.affiliation}
+      %li Country : #{current_member.country}
 
     - if  current_member.is_admin == true
       %h3 As an admin,you can access admin section at /admin URL.
