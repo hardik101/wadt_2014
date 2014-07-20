@@ -7,6 +7,7 @@ ActiveAdmin.register Member do
     column :lastname
     column :diet_msg
     column :affiliation
+    column :country
     column :registered_for
     column :role
     column  "Email confirmed at" , :confirmed_at
@@ -23,6 +24,7 @@ ActiveAdmin.register Member do
       f.input :registered_for
       f.input :diet_msg
       f.input :affiliation
+      f.input :country
       f.input :role
       f.input :password
       f.input :password_confirmation
