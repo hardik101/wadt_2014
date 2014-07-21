@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140720183903) do
+ActiveRecord::Schema.define(:version => 20140721204216) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",                   :null => false
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20140720183903) do
     t.string   "affiliation",            :default => "",          :null => false
     t.string   "registered_for",         :default => "WADT only", :null => false
     t.string   "country",                :default => "Germany",   :null => false
+    t.integer  "fees",                   :default => 1,           :null => false
   end
 
   add_index "members", ["confirmation_token"], :name => "index_members_on_confirmation_token", :unique => true

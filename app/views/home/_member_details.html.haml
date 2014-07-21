@@ -9,7 +9,7 @@
       %li Role     : #{current_member.role}
       %li Affiliation : #{current_member.affiliation}
       %li Country : #{current_member.country}
-
+      %li Registered for : #{current_member.registered_for}
     - if  current_member.is_admin == true
       %h3 As an admin,you can access admin section at /admin URL.
   %br

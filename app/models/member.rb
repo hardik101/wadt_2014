@@ -7,8 +7,10 @@ class Member < ActiveRecord::Base
   ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
   REG_FOR =  ["WADT only","IFIP only","WADT and IFIP"]
-  COUNTRY = ["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua & Deps","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Rep","Chad","Chile","China","Colombia","Comoros","Congo","Congo {Democratic Rep}","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland {Republic}","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea North","Korea South","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar, {Burma}","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russian Federation","Rwanda","St Kitts & Nevis","St Lucia","Saint Vincent & the Grenadines","Samoa","San Marino","Sao Tome & Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"]
-  HIC_COUNTRY=["Germany","France"]
+  COUNTRY = ["Afghanistan","Albania","Algeria","Andorra","Angola","Aruba","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina","Burundi","Bermuda","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Channel Islands","Central African Rep","Chad","Chile","China","Colombia","Comoros","Congo","Congo {Democratic Rep}","Costa Rica","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Darussalam","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Faeroe Islands","French Polynesia","Gabon","Gambia","Guam","Georgia","Germany","Ghana","Greece","Grenada","Greenland","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Hong Kong SAR, China","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Isle of Man","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea, Rep.","Korea South","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macedonia","Macao SAR, China","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar, {Burma}","Namibia","Nauru","Nepal","Netherlands","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Northern Mariana Islands","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Romania","Russian Federation","Rwanda","St. Martin (French part)","St Kitts & Nevis","St Lucia","Saint Vincent & the Grenadines","Samoa","San Marino","Sao Tome & Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Sint Maarten (Dutch part)","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Turks and Caicos Islands","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Virgin Islands (U.S.)","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"]
+ 
+
+
   after_create :send_email_to_organizer
 
   after_save :send_welcome_email, :if => proc { |l| l.confirmed_at_changed? && l.confirmed_at_was.nil? }
@@ -22,43 +24,12 @@ class Member < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, 
   				        :remember_me ,:firstname ,
   				        :lastname,:diet_pref,:diet_msg,
-  				        :role,:affiliation,:registered_for,:country,:is_admin,:confirmed_at
+  				        :role,:affiliation,:registered_for,:country,:is_admin,:fees,:confirmed_at
 
  #def after_confirmation
   #  MemberMailer.new_user_registered_email(self).deliver
   
   #end
-# public
-
-# def self.is_country_hic
-      #HIC_COUNTRY.each do |a|
-        #if a == current_member.country
-         # return true
-        #else 
-       #   return false
-      #  end 
-     #  end 
-    #end
-
-    #def compute_fees
-
-    #@fees=240;
-  #  if Member.registered_for=="WADT only" && Member.is_country_hic == true
-   #     @fees=350;
-    #elsif Member.registered_for=="WADT only" && Member.is_country_hic == false
-     #   @fees = 230;
-  # elsif Member.registered_for=="WADT and IFIP" && Member.is_country_hic == true
-   #     @fees =590;
-    #elsif  Member.registered_for=="WADT and IFIP" && Member.is_country_hic == false
-     #   @fees =470;
-    #else
-     #  return @fees
-     #end 
-   #end
-
-   
-               
-
   private
 
    def send_welcome_email
@@ -68,8 +39,5 @@ class Member < ActiveRecord::Base
    def send_email_to_organizer 
       MemberMailer.new_user_registered_email(self).deliver
    end 
-   
-   
- 
    
 end

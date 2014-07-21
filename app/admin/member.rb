@@ -11,6 +11,7 @@ ActiveAdmin.register Member do
     column :registered_for
     column :role
     column  "Email confirmed at" , :confirmed_at
+    column :fees
     column :is_admin
     
 
@@ -24,7 +25,7 @@ ActiveAdmin.register Member do
       f.input :registered_for
       f.input :diet_msg
       f.input :affiliation
-      f.input :country
+      f.input :country , :as=>:string
       f.input :role
       f.input :password
       f.input :password_confirmation
