@@ -7,7 +7,7 @@ root :to =>'home#index'
   ActiveAdmin.routes(self)
 
    devise_for :members,
-              :controllers => {:registrations => "devise/my_devise/registrations"}
+              :controllers => {:registrations => "my_devise/registrations"}
   
   match 'format_location',       to: 'static_pages#Format&Location',  via: 'get',:as => :format_location
   match 'register',              to:'static_pages#Register',          via: 'get',:as => :register
