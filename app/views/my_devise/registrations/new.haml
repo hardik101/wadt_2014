@@ -20,18 +20,19 @@
   = f.select :country, Member::COUNTRY,:prompt=>"Select your Country",:required => true
 
   = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Please specify if you have some diet restrictions or allergies"
+
   .input-group
     //= f.input_field :fees, class: 'form-control', required: true, placeholder: 'fees to pay'
     %span.input-group-btn
-      %input.btn.btn-primary{type: 'button', value: 'Calculate fees' ,:class => 'col-sm-3 .btn-lg',:onclick =>'alert("Fees will be displayed here")' }
     %br
-  %br
-  = f.label "Upload proof of payment"
+      %input.btn.btn-info{type: 'button', value: 'Calculate fees' ,:class => 'btn-xs',:onclick =>'alert("Fees will be displayed here")' }
+    %br
+  = f.label "Upload proof of payment (image/pdf)"
   = f.file_field :proof_of_pay
   
   .input-group
     %span.input-group-btn
-      %input.btn.btn-primary{type: 'submit', value: 'Register' ,:class => 'col-sm-7'}
+      %input.btn.btn-primary{type: 'submit', value: 'Register' ,:class => 'col-sm-9'}
 = render 'devise/shared/links'
 
 
