@@ -11,6 +11,9 @@ gem 'secure_headers'
 gem 'pry-rails'
 
 gem 'foreigner'
+
+gem "paperclip", "~> 4.1"
+
 gem 'rdf'
 gem 'rdf-rdfxml'
 gem 'rdf-n3'

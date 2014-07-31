@@ -15,6 +15,9 @@ HIC_COUNTRY=["Andorra", "Korea, Rep.","Antigua and Barbuda", "Kuwait","Aruba","L
 
 def create
 
+
+
+
 build_resource(sign_up_params)
 
     resource_saved = resource.save

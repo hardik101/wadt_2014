@@ -3,6 +3,11 @@ class Member < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,:confirmable
+  has_attached_file :proof_of_pay
+  validates_attachment_presence :proof_of_pay
+  do_not_validate_attachment_file_type :proof_of_pay
+  validates_attachment :proof_of_pay,:size => { :in => 0..1000.kilobytes },
+  :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png","application/pdf"] }
 
   ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
@@ -24,7 +29,7 @@ class Member < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, 
   				        :remember_me ,:firstname ,
   				        :lastname,:diet_pref,:diet_msg,
-  				        :role,:affiliation,:registered_for,:country,:is_admin,:fees,:confirmed_at
+  				        :role,:affiliation,:registered_for,:country,:is_admin,:fees,:confirmed_at,:proof_of_pay
 
  #def after_confirmation
   #  MemberMailer.new_user_registered_email(self).deliver
