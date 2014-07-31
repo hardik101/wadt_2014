@@ -5,9 +5,9 @@ class Member < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,:confirmable
   has_attached_file :proof_of_pay
   validates_attachment_presence :proof_of_pay
-  do_not_validate_attachment_file_type :proof_of_pay
-  validates_attachment :proof_of_pay,:size => { :in => 0..1000.kilobytes },
-  :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png","application/pdf"] }
+  validates_with AttachmentSizeValidator, :attributes => :proof_of_pay, :less_than => 2.megabytes
+  validates_attachment :proof_of_pay,
+  :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png","image/jpg","application/pdf"] }
 
   ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
