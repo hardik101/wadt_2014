@@ -22,3 +22,4 @@ config/settings.yml
 /tmp
 /config/local_env.yml
 /public/assets
+/public/system/members
