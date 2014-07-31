@@ -6,8 +6,8 @@ class Member < ActiveRecord::Base
   has_attached_file :proof_of_pay
   validates_attachment_presence :proof_of_pay
   validates_with AttachmentSizeValidator, :attributes => :proof_of_pay, :less_than => 2.megabytes
-  validates_attachment :proof_of_pay,
-  :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png","image/jpg","application/pdf"] }
+  do_not_validate_attachment_file_type :proof_of_pay
+  
 
   ROLE =      ["I apply for a grant", "Invited Speaker", "Standard participant" ]
   DIET_PREF = ["Vegetarian" ,"Non-Vegetarian"]
