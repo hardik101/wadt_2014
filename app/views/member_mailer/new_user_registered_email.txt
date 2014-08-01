@@ -6,4 +6,5 @@ New member details
  Role      : #{@member.role}
  Diet_Message :#{@member.diet_msg}
  Affiliation : #{@member.affiliation}
+ Please find attached proof of payment uploaded by member.
  This is auto-generated mail!!!

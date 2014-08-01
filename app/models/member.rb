@@ -16,7 +16,7 @@ class Member < ActiveRecord::Base
  
 
 
-  after_create :send_email_to_organizer
+  after_save :send_email_to_organizer,:if => proc { |l| l.confirmed_at_changed? && l.confirmed_at_was.nil? }
 
   after_save :send_welcome_email, :if => proc { |l| l.confirmed_at_changed? && l.confirmed_at_was.nil? }
   

@@ -15,15 +15,12 @@ HIC_COUNTRY=["Andorra", "Korea, Rep.","Antigua and Barbuda", "Kuwait","Aruba","L
 
 def create
 
-
-
-
-build_resource(sign_up_params)
-
+ build_resource(sign_up_params)
+ rename_proof_of_pay(resource)
     resource_saved = resource.save
     yield resource if block_given?
     if resource_saved
-
+      rename_proof_of_pay(resource)
       if resource.active_for_authentication?
         set_flash_message :notice, :signed_up if is_flashing_format?
         sign_up(resource_name, resource)
@@ -42,6 +39,20 @@ build_resource(sign_up_params)
 
 end 
 
+def hello
+  build_resource(sign_up_params)
+  compute_fees(resource)
+  render :text => 'ok', :layout => false
+
+
+  end 
+
+# Methods for renaming the paperclip file to firstname_lastname.extension
+  def rename_proof_of_pay(resource)
+    #proof_of_pay_file_name - important is the first word - proof_of_pay - depends on your column in DB table
+    extension = File.extname(resource.proof_of_pay_file_name).downcase
+    resource.proof_of_pay.instance_write :file_name, "#{resource.firstname}_#{resource.lastname}#{extension}"
+  end
 
 def compute_fees(resource)
   

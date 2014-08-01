@@ -13,6 +13,7 @@ ActiveAdmin.register Member do
     column  "Email confirmed at" , :confirmed_at
     column :fees
     column :is_admin
+    column :proof_of_pay
     
 
     actions
