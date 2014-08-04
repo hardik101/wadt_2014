@@ -20,15 +20,8 @@
   = f.select :country, Member::COUNTRY,:prompt=>"Select your Country",:required => true
 
   = f.text_area :diet_msg, :id => "message_area", :cols => 40, :rows => 3 ,:placeholder => "Please specify if you have some diet restrictions or allergies"
-
-
-  .input-group
-    //= f.input_field :fees, class: 'form-control', required: true, placeholder: 'fees to pay'
-    %span.input-group-btn
-    %br
-      %input.btn.btn-info{type: 'button', value: 'Calculate fees' ,:class => 'btn-xs',:onclick => 'alert("hello")' }
-    %br
-  = f.label "Upload proof of payment (image/pdf)"
+  %br
+  = f.label "Upload proof of payment (required only for standard participants)"
   = f.file_field :proof_of_pay
   
   .input-group

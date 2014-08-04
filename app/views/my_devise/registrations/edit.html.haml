@@ -10,8 +10,8 @@
   = f.input_field :password,:required => false, class: 'form-control', placeholder: 'Enter new password (Leave blank otherwise)'
   = f.input_field :password_confirmation,class: 'form-control',:required => false,:placeholder => "Retype new password"
   = f.input_field :affiliation,:required => true,:class =>"form-control",:placeholder => "Change affiliation"
-  = f.label :Role
-  = f.select :role, Member::ROLE,:prompt => "Change Role",:required => true
+  //= f.label :Role
+  //= f.select :role, Member::ROLE,:prompt => "Change Role",:required => true
   //%br
   //= f.label 'Register for'
   //= f.select :registered_for, Member::REG_FOR,:prompt=>"Change",:required => true
