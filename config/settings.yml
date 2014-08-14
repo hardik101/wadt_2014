@@ -1,3 +1,105 @@
+#program information.please change data here to reflct it on progam page.
+#label for ech day,include number of talks and/or disscusions
+thu: 1 invited talk ,11 talks
+fri: 1 invited talk ,11 talks
+sat: 1 disscusions sessions, 4 talks
+sun: 6 talks
+
+
+#Slots for talks on thursday starting from 10:30 to 12:30, 14:00 to 16:00 ,16:30 to 18:00
+
+thu_slot_1: Safety and Performance of the European Rail Traffic Management System-A Modelling and Verification Exercise in Real Time Maude
+thu_slot_2: Solving Queries over Modular Logic Programs
+thu_slot_3: An Institutional Framework for Heterogeneous Formal Development in UML
+thu_slot_4: Arguing Safety Cases Formally
+thu_slot_5: Quasiary Specification Algebras and Logics
+thu_slot_6: Autonomous Systems in Rewriting Logic
+thu_slot_7: Integrating Athena with Algebraic specifications
+thu_slot_8: Fibred Amalgamation and Fibred Equivalences
+thu_slot_9: An Institutional Foundation for the K Semantic Framework
+thu_slot_10: An institutional approach to positive coalgebraic logic
+thu_slot_11: A SOC-Based Formal Specification and Verification of Hybrid Systems
+
+#speakers list for above slots on thursday starting from 10:30 to 12:30, 14:00 to 16:00 ,16:30 to 18:00
+thu_slot_1_speaker: Andrew Lawrence, Ulrich Berger, Markus Roggenbach and Monika Seisenberger
+thu_slot_2_speaker: Ionut Tutu and Jose Luiz Fiadeiro
+thu_slot_3_speaker: Alexander Knapp, Till Mossakowski and Markus Roggenbach
+thu_slot_4_speaker: Valentin Cassano and Tom Maibaum
+thu_slot_5_speaker: Mykola Nikitchenko
+thu_slot_6_speaker: Lenz Belzner
+thu_slot_7_speaker: Konstantine Arkoudas, Katerina Ksystra, Nikolaos Triantafyllou and Petros Stefaneas
+thu_slot_8_speaker: Uwe Wolter and Harald König
+thu_slot_9_speaker: Claudia Elena Chirita and Traian Florin Serbanuta
+thu_slot_10_speaker: Adriana Balan, Alexander Kurz and Jiri Velebil
+thu_slot_11_speaker: Ning Yu and Martin Wirsing
+
+#Slots for talks on friday starting from 10:30 to 12:30, 14:00 to 16:00 ,16:30 to 18:00
+
+fri_slot_1: A canonical proof-theoretic approach to model theory
+fri_slot_2: On the Semantics of Helena Ensemble Specifications 
+fri_slot_3:  Coq as a dependently typed system to build safe concurrent programs
+fri_slot_4: Heterogeneous refinement in HETS
+fri_slot_5: Two institutions of finite-state methods
+fri_slot_6: Herbrand's Theorem in Hybrid Institutions
+fri_slot_7: A Theoretical Foundation for Programming Language Aggregation
+fri_slot_8: Symbolic Execution by Language Transformation
+fri_slot_9: A Full Operational Semantics of Asynchronous Relational Networks
+fri_slot_10: Improving the Quality of Use Cases via Model Construction and Analysis
+fri_slot_11: What is a derived signature morphism?
+
+#speakers list for above slots on friday starting from 10:30 to 12:30, 14:00 to 16:00 ,16:30 to 18:00
+
+fri_slot_1_speaker: Carlos Gustavo Lopez Pombo, Paula Chocrón, Ignacio Vissani and Tom Maibaum
+fri_slot_2_speaker: Annabelle Klarl and Rolf Hennicker
+fri_slot_3_speaker: Guillaume Claret and Yann Régis-Gianas  
+fri_slot_4_speaker: Mihai Codescu and Till Mossakowski
+fri_slot_5_speaker: Tim Fernando
+fri_slot_6_speaker: Daniel Gaina
+fri_slot_7_speaker: Stefan Ciobaca, Dorel Lucanu, Grigore Rosu and Vlad Rusu
+fri_slot_8_speaker: Andrei Arusoaie, Dorel Lucanu and Vlad Rusu
+fri_slot_9_speaker: Ignacio Vissani, Carlos Gustavo Lopez Pombo, Ionuţ Ţuţu and José Luiz Fiadeiro
+fri_slot_10_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
+fri_slot_11_speaker: Ulf Krumnack, Till Mossakowski and Tom Maibaum
+
+#slots for saturday
+sat_slot_1: Fixed Point Logics as Institutions
+sat_slot_2: Co-algebraic semantics of heavy-weighted automata
+sat_slot_3: Semantic Mining of Context Update Constructs in Imperative Languages
+sat_slot_4: Term Graph Rewriting using Spans
+
+sat_slot_1_speaker: Yiannis Kiouvrekis and Petros Stefaneas
+sat_slot_2_speaker: Marie Fortin, Marcello Bonsangue and Jan Rutten
+sat_slot_3_speaker: Irina Mariuca Asavoae, Mihail Asavoae and Adrian Riesco
+sat_slot_4_speaker:  Andrea Corradini, Fabio Gadducci and Tobias Heindel
+
+#slots for sunday
+sun_slot_1: Proving Properties of Concurrent Systems using Graph Transformations and Event-B
+sun_slot_2: Programming Language Abstractions Based on Executable Algebraic Semantics
+sun_slot_3: A Refinement Procedure for Inferring Side-Effect Constructs
+sun_slot_4:
+sun_slot_5:
+sun_slot_6:
+
+sun_slot_1_speaker: Simone André Da Costa Cavalheiro, Luciana Foss and Leila Ribeiro
+sun_slot_2_speaker: Irina Mariuca Asavoae
+sun_slot_3_speaker: Adrian Riesco, Irina Mariuca Asavoae and Mihail Asavoae
+sun_slot_4_speaker:
+sun_slot_5_speaker:
+sun_slot_6_speaker:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Name of the installation
 name: "WADT 2014"
