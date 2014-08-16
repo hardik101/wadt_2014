@@ -92,6 +92,19 @@ margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/
 margin-top: 20;
 }
 
+/* formatting for program.haml page */
+.high-five {
+ background-color: #ffbcde;
+    border-color: #eed3d7;
+    color: #000000;
+    text-align: left;
+
+
+}
+
+
+
+
 /*flash*/
 .alert-error {
     background-color: #f2dede;
@@ -100,10 +113,13 @@ margin-top: 20;
     text-align: left;
  }
 
+
+
+
 .alert-alert {
-    background-color: #f2dede;
+    background-color: "blue";
     border-color: #eed3d7;
-    color: #b94a48;
+    color: #0000ff;
     text-align: left;
  }
 
@@ -115,8 +131,8 @@ margin-top: 20;
  }
 
 .alert-notice {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #468847;
+    background-color: #000000;
+    border-color: #00000f;
+    color: #0000ff;
     text-align: left;
  }
