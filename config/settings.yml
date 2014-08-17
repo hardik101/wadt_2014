@@ -76,14 +76,14 @@ sat_slot_4_speaker:  Andrea Corradini, Fabio Gadducci and Tobias Heindel
 sun_slot_1: Proving Properties of Concurrent Systems using Graph Transformations and Event-B
 sun_slot_2: Programming Language Abstractions Based on Executable Algebraic Semantics
 sun_slot_3: A Refinement Procedure for Inferring Side-Effect Constructs
-sun_slot_4:
+sun_slot_4:  Proving liveness properties using abstract state machines and n-visibility
 sun_slot_5:
 sun_slot_6:
 
 sun_slot_1_speaker: Simone André Da Costa Cavalheiro, Luciana Foss and Leila Ribeiro
 sun_slot_2_speaker: Irina Mariuca Asavoae
 sun_slot_3_speaker: Adrian Riesco, Irina Mariuca Asavoae and Mihail Asavoae
-sun_slot_4_speaker:
+sun_slot_4_speaker:  Norbert Preining, Kokichi Futatsugi and Kazuhiro Ogata
 sun_slot_5_speaker:
 sun_slot_6_speaker:
 
