@@ -39,13 +39,6 @@ fri_slot_1: A canonical proof-theoretic approach to model theory
 fri_slot_2: On the Semantics of Helena Ensemble Specifications 
 fri_slot_3:  Coq as a dependently typed system to build safe concurrent programs
 fri_slot_4: Heterogeneous refinement in HETS
-fri_slot_5: Two institutions of finite-state methods
-fri_slot_6: Herbrand's Theorem in Hybrid Institutions
-fri_slot_7: A Theoretical Foundation for Programming Language Aggregation
-fri_slot_8: Symbolic Execution by Language Transformation
-fri_slot_9: A Full Operational Semantics of Asynchronous Relational Networks
-fri_slot_10: Improving the Quality of Use Cases via Model Construction and Analysis
-fri_slot_11: What is a derived signature morphism?
 
 #speakers list for above slots on friday starting from 10:30 to 12:30, 14:00 to 16:00 ,16:30 to 18:00
 
@@ -53,39 +46,43 @@ fri_slot_1_speaker: Carlos Gustavo Lopez Pombo, Paula Chocrón, Ignacio Vissani 
 fri_slot_2_speaker: Annabelle Klarl and Rolf Hennicker
 fri_slot_3_speaker: Guillaume Claret and Yann Régis-Gianas  
 fri_slot_4_speaker: Mihai Codescu and Till Mossakowski
-fri_slot_5_speaker: Tim Fernando
-fri_slot_6_speaker: Daniel Gaina
-fri_slot_7_speaker: Stefan Ciobaca, Dorel Lucanu, Grigore Rosu and Vlad Rusu
-fri_slot_8_speaker: Andrei Arusoaie, Dorel Lucanu and Vlad Rusu
-fri_slot_9_speaker: Ignacio Vissani, Carlos Gustavo Lopez Pombo, Ionuţ Ţuţu and José Luiz Fiadeiro
-fri_slot_10_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
-fri_slot_11_speaker: Ulf Krumnack, Till Mossakowski and Tom Maibaum
 
 #slots for saturday
 sat_slot_1: Fixed Point Logics as Institutions
 sat_slot_2: Co-algebraic semantics of heavy-weighted automata
 sat_slot_3: Semantic Mining of Context Update Constructs in Imperative Languages
 sat_slot_4: Term Graph Rewriting using Spans
+sat_slot_5: Two institutions of finite-state methods
+sat_slot_6: Herbrand's Theorem in Hybrid Institutions
 
 sat_slot_1_speaker: Yiannis Kiouvrekis and Petros Stefaneas
 sat_slot_2_speaker: Marie Fortin, Marcello Bonsangue and Jan Rutten
 sat_slot_3_speaker: Irina Mariuca Asavoae, Mihail Asavoae and Adrian Riesco
 sat_slot_4_speaker:  Andrea Corradini, Fabio Gadducci and Tobias Heindel
+sat_slot_5_speaker: Tim Fernando
+sat_slot_6_speaker: Daniel Gaina
 
 #slots for sunday
 sun_slot_1: Proving Properties of Concurrent Systems using Graph Transformations and Event-B
 sun_slot_2: Programming Language Abstractions Based on Executable Algebraic Semantics
 sun_slot_3: A Refinement Procedure for Inferring Side-Effect Constructs
 sun_slot_4:  Proving liveness properties using abstract state machines and n-visibility
-sun_slot_5:
-sun_slot_6:
+sun_slot_5: A Theoretical Foundation for Programming Language Aggregation
+sun_slot_6: Symbolic Execution by Language Transformation
+sun_slot_7: A Full Operational Semantics of Asynchronous Relational Networks
+sun_slot_8: Improving the Quality of Use Cases via Model Construction and Analysis
+sun_slot_9: What is a derived signature morphism?
 
 sun_slot_1_speaker: Simone André Da Costa Cavalheiro, Luciana Foss and Leila Ribeiro
 sun_slot_2_speaker: Irina Mariuca Asavoae
 sun_slot_3_speaker: Adrian Riesco, Irina Mariuca Asavoae and Mihail Asavoae
 sun_slot_4_speaker:  Norbert Preining, Kokichi Futatsugi and Kazuhiro Ogata
-sun_slot_5_speaker:
-sun_slot_6_speaker:
+sun_slot_5_speaker: Stefan Ciobaca, Dorel Lucanu, Grigore Rosu and Vlad Rusu
+sun_slot_6_speaker: Andrei Arusoaie, Dorel Lucanu and Vlad Rusu
+sun_slot_7_speaker: Ignacio Vissani, Carlos Gustavo Lopez Pombo, Ionuţ Ţuţu and José Luiz Fiadeiro
+sun_slot_8_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
+sun_slot_9_speaker: Ulf Krumnack, Till Mossakowski and Tom Maibaum
+
 
 
 
