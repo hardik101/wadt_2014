@@ -1,5 +1,5 @@
 #program information.please change data here to reflct it on progam page.
-#label for each day,include number of talks and/or disscusions
+#label for ech day,include number of talks and/or disscusions
 thu: 1 invited talk ,11 talks
 fri: 1 invited talk ,11 talks
 sat: 1 disscusions sessions, 4 talks
@@ -34,15 +34,15 @@ thu_slot_7: An institutional approach to positive coalgebraic logic
 thu_slot_7_speaker: Adriana Balan, Alexander Kurz and Jiri Velebil
 
 
-thu_slot_9: Improving the Quality of Use Cases via Model Construction and Analysis
-thu_slot_9_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
+thu_slot_8: Improving the Quality of Use Cases via Model Construction and Analysis
+thu_slot_8_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
 
-thu_slot_10: Term Graph Rewriting using Spans
-thu_slot_10_speaker:  Andrea Corradini, Fabio Gadducci and Tobias Heindel
+thu_slot_9: Term Graph Rewriting using Spans
+thu_slot_9_speaker:  Andrea Corradini, Fabio Gadducci and Tobias Heindel
 
 
-thu_slot_11: Proving Properties of Concurrent Systems using Graph Transformations and Event-B
-thu_slot_11_speaker: Simone André Da Costa Cavalheiro, Luciana Foss and Leila Ribeiro
+thu_slot_10: Proving Properties of Concurrent Systems using Graph Transformations and Event-B
+thu_slot_10_speaker: Simone André Da Costa Cavalheiro, Luciana Foss and Leila Ribeiro
 
 
 #### Friday
@@ -116,7 +116,6 @@ sun_slot_6:  Coq as a dependently typed system to build safe concurrent programs
 sun_slot_6_speaker: Guillaume Claret and Yann Régis-Gianas  
 
 # thu 1-11, fri 1-4, san 1-6, sun 1-9
-
 
 
 
