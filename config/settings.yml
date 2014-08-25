@@ -1,5 +1,5 @@
 #program information.please change data here to reflct it on progam page.
-#label for ech day,include number of talks and/or disscusions
+#label for each day,include number of talks and/or disscusions
 thu: 1 invited talk ,11 talks
 fri: 1 invited talk ,11 talks
 sat: 1 disscusions sessions, 4 talks
@@ -33,8 +33,6 @@ thu_slot_6_speaker: Daniel Gaina
 thu_slot_7: An institutional approach to positive coalgebraic logic
 thu_slot_7_speaker: Adriana Balan, Alexander Kurz and Jiri Velebil
 
-thu_slot_8: A Full Operational Semantics of Asynchronous Relational Networks
-thu_slot_8_speaker: Ignacio Vissani, Carlos Gustavo Lopez Pombo, Ionuţ Ţuţu and José Luiz Fiadeiro
 
 thu_slot_9: Improving the Quality of Use Cases via Model Construction and Analysis
 thu_slot_9_speaker: Leila Ribeiro, Erika Cota, Lucio Mauro Duarte and Marcos Antonio de Oliveira Junior
@@ -70,20 +68,30 @@ sat_slot_1_speaker: Annabelle Klarl and Rolf Hennicker
 sat_slot_2: Arguing Safety Cases Formally
 sat_slot_2_speaker: Valentin Cassano and Tom Maibaum
 
+sat_slot_3: A Full Operational Semantics of Asynchronous Relational Networks
+sat_slot_3_speaker: Ignacio Vissani, Carlos Gustavo Lopez Pombo, Ionuţ Ţuţu and José Luiz Fiadeiro
 
-sat_slot_3: Symbolic Execution by Language Transformation
-sat_slot_3_speaker: Andrei Arusoaie, Dorel Lucanu and Vlad Rusu
 
+sat_slot_4: Symbolic Execution by Language Transformation
+sat_slot_4_speaker: Andrei Arusoaie, Dorel Lucanu and Vlad Rusu
 
-sat_slot_4:  Proving liveness properties using abstract state machines and n-visibility
-sat_slot_4_speaker:  Norbert Preining, Kokichi Futatsugi and Kazuhiro Ogata
+sat_slot_5:  Proving liveness properties using abstract state machines and n-visibility
+sat_slot_5_speaker:  Norbert Preining, Kokichi Futatsugi and Kazuhiro Ogata
 
-sat_slot_5: A canonical proof-theoretic approach to model theory
-sat_slot_5_speaker: Carlos Gustavo Lopez Pombo, Paula Chocrón, Ignacio Vissani and Tom Maibaum
+sat_slot_7: A canonical proof-theoretic approach to model theory
+sat_slot_7_speaker: Carlos Gustavo Lopez Pombo, Paula Chocrón, Ignacio Vissani and Tom Maibaum
 
 sat_slot_6: Co-algebraic semantics of heavy-weighted automata
 sat_slot_6_speaker: Marie Fortin, Marcello Bonsangue and Jan Rutten
 
+sat_slot_8: Semantic Mining of Context Update Constructs in Imperative Languages
+sat_slot_8_speaker: Irina Mariuca Asavoae, Mihail Asavoae and Adrian Riesco
+
+sat_slot_9: Programming Language Abstractions Based on Executable Algebraic Semantics
+sat_slot_9_speaker: Irina Mariuca Asavoae
+
+sat_slot_10: A Refinement Procedure for Inferring Side-Effect Constructs
+sat_slot_10_speaker: Adrian Riesco, Irina Mariuca Asavoae and Mihail Asavoae
 
 ### Sunday
 
@@ -106,16 +114,6 @@ sun_slot_5_speaker: Lenz Belzner
 
 sun_slot_6:  Coq as a dependently typed system to build safe concurrent programs
 sun_slot_6_speaker: Guillaume Claret and Yann Régis-Gianas  
-
-sun_slot_7: Semantic Mining of Context Update Constructs in Imperative Languages
-sun_slot_7_speaker: Irina Mariuca Asavoae, Mihail Asavoae and Adrian Riesco
-
-sun_slot_8: Programming Language Abstractions Based on Executable Algebraic Semantics
-sun_slot_8_speaker: Irina Mariuca Asavoae
-
-sun_slot_9: A Refinement Procedure for Inferring Side-Effect Constructs
-sun_slot_9_speaker: Adrian Riesco, Irina Mariuca Asavoae and Mihail Asavoae
-
 
 # thu 1-11, fri 1-4, san 1-6, sun 1-9
 
