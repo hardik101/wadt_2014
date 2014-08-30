@@ -13,24 +13,26 @@ root :to =>'home#index'
   match 'register',              to:'static_pages#Register',          via: 'get',:as => :register
   match 'speakers',              to: 'static_pages#Speakers',         via: 'get',:as => :speakers
   match 'submission',            to: 'static_pages#Submission',       via: 'get',:as => :submission
-  match 'accepted_abstracts',  to: 'static_pages#AcceptedAbstracts',via: 'get',:as => :accepted_abstracts
+  match 'accepted_abstracts',    to: 'static_pages#AcceptedAbstracts',via: 'get',:as => :accepted_abstracts
   match 'proceedings',           to:'static_pages#Proceedings',       via: 'get',:as => :proceedings
   match 'program',               to:'static_pages#Program',           via: 'get',:as => :program
   match 'sponsors_grants',       to:'static_pages#Sponsors&Grants',   via: 'get',:as => :sponsors_grants
   match 'travel',                to:'static_pages#travel',            via: 'get',:as => :travel
   match 'contact',               to:'static_pages#Contact',           via: 'get',:as=>  :contact
-  match 'important_dates',     to:'static_pages#ImportantDates',    via: 'get',:as => :important_dates
+  match 'important_dates',       to:'static_pages#ImportantDates',    via: 'get',:as => :important_dates
   match 'meals',                 to:'static_pages#Meals',             via: 'get',:as => :meals
   match 'information',           to:'static_pages#Information',       via: 'get',:as => :information
   match 'committees',            to:'static_pages#committees',        via: 'get',:as => :committees
   match 'accommodation',         to:'static_pages#accommodation',     via: 'get',:as => :accommodation
   match 'aims_topic',            to:'static_pages#Aims&Topic',        via: 'get',:as => :aims_topic
-  match 'accepted_papers',     to:'static_pages#AcceptedPapers',    via: 'get',:as => :proceedings
-  match 'finalized_reviews',   to:'static_pages#FinalizedReviews',  via: 'get', :as => :proceedings
+  match 'accepted_papers',       to:'static_pages#AcceptedPapers',    via: 'get',:as => :proceedings
+  match 'pre_proceedings',      to:'static_pages#PreProceedings',     via: 'get',:as => :pre_proceedings
+  match 'finalized_reviews',   to:'static_pages#FinalizedReviews',  via: 'get'
 
 
 
 
+  match 'pre_proceedings',           to:'static_pages#PreProceedings',       via: 'get',:as => :pre_proceedings
   match 'members/format_location',         to: 'static_pages#Format&Location',  via: 'get'
   match 'members/register',                to:'static_pages#Register',          via: 'get'
   match 'members/speakers',                to: 'static_pages#Speakers',         via: 'get'
@@ -53,7 +55,7 @@ root :to =>'home#index'
   match 'members/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
 
 
-
+  match 'pre_proceedings',           to:'static_pages#PreProceedings',       via: 'get',:as => :pre_proceedings
   match 'members/password/format_location',         to: 'static_pages#Format&Location',  via: 'get'
   match 'members/password/register',                to:'static_pages#Register',          via: 'get'
   match 'members/password/speakers',                to: 'static_pages#Speakers',         via: 'get'
@@ -74,7 +76,7 @@ root :to =>'home#index'
   match 'members/password/finalized_reviews',     to:'static_pages#FinalizedReviews',  via: 'get'
 
 
-
+  match 'pre_proceedings',           to:'static_pages#PreProceedings',       via: 'get',:as => :pre_proceedings
   match 'members/confirmation/format_location',         to: 'static_pages#Format&Location',  via: 'get'
   match 'members/confirmation/register',                to:'static_pages#Register',          via: 'get'
   match 'members/confirmation/speakers',                to: 'static_pages#Speakers',         via: 'get'
