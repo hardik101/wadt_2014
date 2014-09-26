@@ -1,4 +1,7 @@
-%nav#sidebar
+%br
+%br
+%nav
+#navbarfont
  %ul.nav.nav-pills.nav-stacked.center
   %li{class: current_page?(root_path) && 'active'} #{ link_to "Home", root_path}
   - @list.each do |a|
@@ -7,5 +10,8 @@
   -s1='/members/'+s
   -a='Registration'  if a == "Register" 
    %li{class: is_active?(s1)} #{link_to a,s}
-    
+%br
+%br
+
+
 		

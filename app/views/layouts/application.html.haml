@@ -4,19 +4,20 @@
     %title= Settings.name
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag    "custom", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #maincontainer
-      #topsection
-        .innertube
+    .container
+      .row
+        .col-sm-3.col-md-3.col-xs-3
+          =render 'layouts/logo'
+        .col-sm-7.col-md-7.col-xs-7
           = render 'layouts/topsection'
-      #contentwrapper
-        #contentcolumn
-          .innertube
-            = render 'layouts/messages'
-            = yield
-      #leftcolumn
-        .innertube
+      .row
+        .col-sm-3.col-md-3.col-xs-3
           = render 'layouts/navbar'
-      = render 'layouts/footer'
+        .col-sm-9.col-md-9#content
+          = render 'layouts/messages'
+          = yield
+  = render 'layouts/footer'

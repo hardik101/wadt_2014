@@ -1,106 +1,127 @@
 @charset "UTF-8";
 /* CSS Document */
-
 @import "bootstrap";
 
-input{ width: 300px;
- } 
+ $Linkcolor: #6cae93; 
 
- #btn.btn-primary{
-  width: 10
- }
+.link{
 
-body {
-
-   background-color: #FFFFFF;
-   margin-left: 20px; margin-right: 20px; margin-bottom: 10px;
-   font-family: LucidaGrande, Lucida, Tahoma, Arial, Helvetica, sans-serif; 
-   font: small/1.5em; font-size:small; color: #000000; 
-   overflow: auto;
-   margin :20;
-   padding:20;
-   line-height: 1.5em;
-   }
-   
-a {color: #3A867D;text-decoration: none}
-a:hover {color: #BE5028}
-a:active {color: #8F2C1B}
-
-.center {text-align: center} 
-
-.news {
- max-width: 70px;
- max-height: 70px 
+	color: $Linkcolor;
 }
 
 
-td {
-   font-family: LucidaGrande, Lucida, Tahoma, Arial, Helvetica, sans-serif; 
-   font: small/1.5em; font-size:small; color: #046F6F; 
-   }
-   
-pre {
-   font-family: "Courier New", Courier, monospace;; 
-   font: medium/1.5em; font-size:medium; color: #046F6F; 
-   }
-
-
-#topsection{
-	background: #9C97DB;
-	height: 175px; /*Height of top section 90px*/
-	background-image: image-url('Peles.jpg');
-	color: #FFFFFF;
-	font: medium/1.5em; font-size:medium;
-    h1{
-margin: 0;
-padding-top: 15px;
-}
+@font-face {
+	font-family: bell-gothic;
+	src: url(assets/fonts/bell-gothic-bold.woff) format('woff');
 }
 
-#contentwrapper{
-float: left;
-width: 100%;
+
+
+.l4 {
+font-family: bell-gothic;
+font: medium/1.5em; font-size: 20px;
 }
 
-#contentcolumn{
-margin-left: 240px; /*Set left margin to LeftColumnWidth*/
+.l6 {
+
+font-family: bell-gothic;
+font: medium/1.5em; font-size: 28px;
 }
 
-#leftcolumn{
-float: left;
-width: 220px; /*Width of left column*/
-margin-left: -100%;
-background: #FFFFFF;
-font: medium/1.5em; font-size:medium;
-line-height: 1.0em;
+.news-font{
+
+	font-size:16px;
+}
+.n
+{
+   font-family: bell-gothic;
+   font: medium/1.5em; font-size: 22px;
+   color: #28396d;
 }
 
-#footer{
-clear: left;
-width: 100%;
-background-color: #F3F3F3;
-text-align: center;
-padding: 4px 0;
-bottom:0;
+
+$bgDefault      : #F8F2F7;
+$bgHighlight    : #28396d; //This is navy-blue color of active link bacground color 
+$colDefault     : #6cae93; //This is green font color of navbar
+$colHighlight   :  #eeeeee; //This is grey 
+
+.navbar-nav,.nav-pills.nav-stacked {
+		> li {
+			> a {
+				color: $colDefault;
+				&:hover,  &:focus {
+					background-color: $colHighlight; }}}
+		> .active {
+			> a, > a:hover, > a:focus {
+				color: $colHighlight;
+				background-color: $bgHighlight; }}
+		> .open {
+			> a, > a:hover, > a:focus {
+				color: $colHighlight;
+				background-color: $bgHighlight; }}}
+
+.nav-pills.nav-stacked{
+
+    margin-left: 5px;
+    width: 175px;
+}
+
+.container {
+    
+    margin-left: 166px;
+    margin-right: 190px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	max-width:980px;
+	background-color: #FAFAFA;
 
 }
+
+
 #center_text{
 
   text-align: center;
 }
-.innertube{
-margin: 20px; /*Margins for inner DIV inside each column (to provide padding)*/
-margin-top: 20;
+
+
+#navbarfont{
+
+font: medium/1.5em; font-size: medium;
+line-height: 1.0em;
 }
 
-/* formatting for program.haml page */
-.high-five {
- background-color: #ffbcde;
-    border-color: #eed3d7;
-    color: #000000;
-    text-align: left;
+#logo{
+
+	margin-left: 10px;
+}
+
+#content{
+ max-width: 640px;	
+
+}
+
+#title{
+
+  margin-top: 10px;
+
+}
+
+
+footer {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 

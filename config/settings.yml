@@ -127,7 +127,7 @@ conf_year: "2014"
 
 #Banner Details 
 fullname: "22nd International Workshop on Algebraic Development Techniques"
-place: "Sinaia, Romania,September 4-7,2014"
+place: "SINAIA, ROMANIA, SEPTEMBER 4-7,2014"
 
 # Hostname of the installation
 hostname: wadt2014.cs.ovgu.de
