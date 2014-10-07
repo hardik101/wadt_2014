@@ -127,6 +127,8 @@ conf_year: "2014"
 
 #Banner Details 
 fullname: "22nd International Workshop on Algebraic Development Techniques"
+partialname: "22nd International Workshop on"
+bottomname:  "Algebraic Development Techniques"
 place: "SINAIA, ROMANIA, SEPTEMBER 4-7,2014"
 
 # Hostname of the installation
